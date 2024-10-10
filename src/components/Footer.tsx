@@ -1,5 +1,32 @@
-import React from "react";
+import githubIcon from "../assets/githubIcon.svg";
+import linkedInIcon from "../assets/linkedInIcon.svg";
 
 export const Footer = () => {
-  return <div>Footer</div>;
+  return (
+    <footer className="w-full bg-darkBlue py-4">
+      <div className="container flex items-center justify-between font-bold">
+        <a href="/" className="flex items-center gap-2">
+          <span>Skydan Dmytro</span>
+        </a>
+        <div className="flex gap-6 justify-center align-center">
+          <a
+            href="https://github.com/SkyDmytro"
+            target="_blank"
+            rel="noreferrer"
+            className="flex items-center gap-2"
+          >
+            <img src={githubIcon} alt="GitHub icon" className="h-8 w-8" />
+          </a>
+          <a
+            href="https://www.linkedin.com/in/dima-skydan-160010247/"
+            target="_blank"
+            rel="noreferrer"
+            className="flex items-center gap-2"
+          >
+            <img src={linkedInIcon} alt="LinkedIn icon" className="h-8 w-8" />
+          </a>
+        </div>
+      </div>
+    </footer>
+  );
 };
