@@ -15,7 +15,19 @@ export default {
       secondaryFont:"#B8B8B8"
     },
     container:{
-      center:true
+      center:true,
+      screens: {
+        sm: '90vw',
+        md: '768px',
+        lg: '976px',
+        xl: '1440px',
+      }
+    },
+    screens: {
+      sm: '320px',
+      md: '768px',
+      lg: '976px',
+      xl: '1440px',
     }
     
   },
