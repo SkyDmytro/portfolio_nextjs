@@ -17,7 +17,7 @@ export const FormMessageTextArea = ({
       </label>
       <textarea
         id="message"
-        className="p-2 rounded resize-none bg-blue "
+        className="p-2 rounded resize-none bg-blue focus:outline-none focus:ring-2 focus:ring-lightBlue"
         cols={30}
         rows={10}
         {...props}

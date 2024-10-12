@@ -2,20 +2,20 @@ import React from "react";
 
 interface CustomInputProps {
   labelText: string;
-  // inputValue: string;
-  // onChange: (event: React.ChangeEvent<HTMLInputElement>) => void;
 }
 
 const CustomInput = ({
   labelText,
-  // inputValue,
-  // onChange,
   ...props
 }: CustomInputProps): React.ReactElement => {
   return (
     <div className="flex flex-col gap-4">
       <label className="font-bold">{labelText}</label>
-      <input type="text" className="p-2 bg-blue rounded" {...props} />
+      <input
+        type="text"
+        className="p-2 bg-blue rounded focus:outline-none focus:ring-2 focus:ring-lightBlue"
+        {...props}
+      />
     </div>
   );
 };

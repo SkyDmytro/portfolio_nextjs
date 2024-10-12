@@ -2,12 +2,22 @@ import { CustomButton } from "./CustomButton";
 import CustomInput from "./CustomInput";
 import { FormMessageTextArea } from "./FormMessageTextArea";
 import { Controller, useForm } from "react-hook-form";
+import { yupResolver } from "@hookform/resolvers/yup";
+import * as yup from "yup";
+import { ContactFormValues } from "../types/formTypes";
+import { sendEmail } from "../api/sendEmail";
 
-export interface ContactFormValues {
-  name: string;
-  email: string;
-  message: string;
-}
+const schema = yup.object().shape({
+  name: yup.string().required().min(2),
+  email: yup
+    .string()
+    .required()
+    .matches(
+      /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i,
+      "Email must be a valid email address"
+    ),
+  message: yup.string().required(),
+});
 
 export const ContactForm = (): JSX.Element => {
   const {
@@ -15,15 +25,16 @@ export const ContactForm = (): JSX.Element => {
     formState: { errors },
     control,
   } = useForm<ContactFormValues>({
+    resolver: yupResolver(schema),
     defaultValues: {
       name: "",
       email: "",
       message: "",
     },
-    mode: "onBlur",
-    reValidateMode: "onBlur",
   });
-  const onSubmit = (data: ContactFormValues) => console.log(data);
+  const onSubmit = (data: ContactFormValues) => {
+    sendEmail(data);
+  };
 
   return (
     <form
@@ -33,42 +44,28 @@ export const ContactForm = (): JSX.Element => {
       <Controller
         name="name"
         control={control}
-        rules={{ required: true, minLength: 2 }}
         render={({ field }) => <CustomInput labelText="Name" {...field} />}
       />
       {errors.name && (
-        <span className="text-red-500 text-sm">
-          {errors.name.type === "required"
-            ? "This field is required"
-            : "Name must be at least 2 characters"}
-        </span>
+        <span className="text-red-500 text-sm">{errors.name.message}</span>
       )}
       <Controller
         name="email"
         control={control}
-        rules={{
-          required: true,
-          pattern: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i,
-        }}
         render={({ field }) => <CustomInput labelText="Email" {...field} />}
       />
       {errors.email && (
-        <span className="text-red-500 text-sm">
-          {errors.email.type === "required"
-            ? "This field is required"
-            : "Email must be a valid email address"}
-        </span>
+        <span className="text-red-500 text-sm">{errors.email.message}</span>
       )}
       <Controller
         name="message"
         control={control}
-        rules={{ required: true }}
         render={({ field }) => (
           <FormMessageTextArea labelText="Message" {...field} />
         )}
       />
       {errors.message && (
-        <span className="text-red-500 text-sm">This field is required</span>
+        <span className="text-red-500 text-sm">{errors.message.message}</span>
       )}
       <CustomButton text="Submit" type="submit" />
     </form>
