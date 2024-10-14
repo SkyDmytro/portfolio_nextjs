@@ -23,3 +23,25 @@ export const mobilChatKeyTechnologies = [
   "Jest",
   "TypeScript",
 ];
+
+export const mySkills = [
+  "JavaScript",
+  "TypeScript",
+  "HTML",
+  "CSS",
+  "React.js",
+  "Node.js",
+  "Next.js",
+  "SCSS",
+  "Redux",
+  "Material-UI",
+  "GIT",
+  "JEST",
+  "npm",
+  "yarn",
+  "Tailwind",
+];
+
+export const linkedInLink =
+  "https://www.linkedin.com/in/dima-skydan-160010247/";
+export const gitHubLink = "https://github.com/SkyDmytro";

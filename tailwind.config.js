@@ -12,7 +12,8 @@ export default {
       blue:"#13222A",
       lightBlue:"#336D8B",
       primaryFont:"white",
-      secondaryFont:"#B8B8B8"
+      secondaryFont:"#B8B8B8",
+      gray:"#4A6D7C"
     },
     container:{
       center:true,

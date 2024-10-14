@@ -15,14 +15,14 @@ import { TypingTestDescription } from "../components/TypingTestDescription";
 import { ReactNode } from "react";
 const ProjectContainer = ({ children }: { children: ReactNode }) => {
   return (
-    <div className="typing-test flex justify-evenly flex-wrap sm:gap-16 xl:gap-10 ">
+    <div className="typing-test flex justify-evenly flex-wrap sm:gap-16 xl:gap-10  ">
       {children}
     </div>
   );
 };
 export const ProjectsPage = () => {
   return (
-    <section id="projects" className="bg-darkBlue">
+    <section id="projects" className="bg-darkBlue ">
       <div className="container flex flex-col gap-24 pt-10 pb-10">
         <PageTitle
           title="Projects"

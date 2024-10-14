@@ -9,8 +9,10 @@ export const MobileChatDescription = () => {
       {highlightText("WebSocket")} server. Users can add new chats and remove
       them using an icon next to user-created chats. Once connected to a chat,
       users can send messages and receive immediate feedback from the server.
-      This project enhanced my skills in mobile app development, state
-      management with {highlightText("Redux")}, and real-time communication.
+      <p className="mt-2">
+        This project enhanced my skills in mobile app development, state
+        management with {highlightText("Redux")}, and real-time communication.
+      </p>
     </span>
   );
 };

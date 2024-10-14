@@ -14,8 +14,11 @@ export const StarWarsDescription = () => {
       traveled on. The project incorporates {highlightText("Jest")} and{" "}
       {highlightText("React Testing Library")} for testing the app’s core
       components and logic, ensuring reliability and stability as the codebase
-      evolves. Overall, this project enhanced my skills in{" "}
-      {highlightText("React")} development and component management.
+      evolves.
+      <p className="mt-2">
+        Overall, this project enhanced my skills in {highlightText("React")}{" "}
+        development and component management.
+      </p>
     </span>
   );
 };

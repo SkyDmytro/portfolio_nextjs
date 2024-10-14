@@ -1,5 +1,6 @@
 import githubIcon from "../assets/githubIcon.svg";
 import linkedInIcon from "../assets/linkedInIcon.svg";
+import { gitHubLink, linkedInLink } from "../helpers/constants";
 
 export const Footer = () => {
   return (
@@ -10,7 +11,7 @@ export const Footer = () => {
         </a>
         <div className="flex gap-6 justify-center align-center">
           <a
-            href="https://github.com/SkyDmytro"
+            href={gitHubLink}
             target="_blank"
             rel="noreferrer"
             className="flex items-center gap-2"
@@ -18,7 +19,7 @@ export const Footer = () => {
             <img src={githubIcon} alt="GitHub icon" className="h-8 w-8" />
           </a>
           <a
-            href="https://www.linkedin.com/in/dima-skydan-160010247/"
+            href={linkedInLink}
             target="_blank"
             rel="noreferrer"
             className="flex items-center gap-2"
