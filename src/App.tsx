@@ -1,5 +1,6 @@
 import { Footer } from "./components/Footer";
 import { Header } from "./components/Header";
+import { ScrollButton } from "./components/ScrollButton";
 import { AboutPage } from "./pages/AboutPage";
 import { ContactPage } from "./pages/ContactPage";
 import { MainPage } from "./pages/MainPage";
@@ -15,6 +16,7 @@ const App = (): JSX.Element => {
       <ProjectsPage />
       <ContactPage />
       <Footer />
+      <ScrollButton />
     </>
   );
 };
