@@ -11,17 +11,21 @@ export const GetToKnowMeComponent = () => {
   };
 
   return (
-    <div className="sm:w-full lg:w-1/3 flex flex-col gap-8 justify-start hover-animation p-4">
+    <div className="sm:w-full lg:w-1/3 flex flex-col gap-8 justify-start p-4">
       <TitleSkillsPage text="Get to know me!" />
       <div className="text-xl flex flex-col gap-4">
         <p>
-          I'm a Frontend Focused Web Developer with a passion for building and
-          managing the Front-end of websites and web applications.
+          Hello! I’m a Ukrainian Frontend Web Developer living in Poland. I love
+          creating websites and web applications that are both attractive and
+          easy to use. My main focus is on the front end, where I enjoy turning
+          ideas into functional online experiences.
         </p>
         <p>
-          Check out some of my projects below. I also like sharing content
-          related to web development on my blog.
+          I’m always keeping up with the latest trends to expand my skills and
+          knowledge. I’m passionate about tackling challenges and enjoy
+          collaborating with other developers to bring projects to life.
         </p>
+        <p>You can explore my portfolio below to see examples of my work.</p>
         <p>
           Feel free to connect with me on{" "}
           <a

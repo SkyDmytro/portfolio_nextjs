@@ -25,21 +25,21 @@ export const mobilChatKeyTechnologies = [
 ];
 
 export const mySkills = [
-  "JavaScript",
-  "TypeScript",
   "HTML",
   "CSS",
-  "React.js",
-  "Node.js",
-  "Next.js",
   "SCSS",
+  "JavaScript",
+  "TypeScript",
+  "React.js",
+  "Next.js",
+  "Node.js",
+  "WebSockets",
   "Redux",
   "Material-UI",
-  "GIT",
-  "JEST",
-  "npm",
-  "yarn",
   "Tailwind",
+  "JEST",
+  "React Testing Library",
+  "GIT",
 ];
 
 export const linkedInLink =

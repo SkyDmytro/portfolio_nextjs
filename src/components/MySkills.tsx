@@ -4,7 +4,7 @@ interface MySkillsComponentProps {
 
 export const MySkills = ({ skills }: MySkillsComponentProps) => {
   return (
-    <div className="flex flex-wrap gap-2">
+    <div className="flex flex-wrap  gap-x-2 gap-y-4 ">
       {skills.map((skill: string) => (
         <div
           key={skill}

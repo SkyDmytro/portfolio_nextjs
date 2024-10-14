@@ -12,7 +12,7 @@ export const AboutPage = () => {
           subtitle="Here you will find more information about me, what I do, and my current skills mostly in terms of programming and technology"
         />
 
-        <div className="flex sm:flex-col lg:flex-row justify-evenly sm:gap-10 sm:mt-10 md:mt-20 lg:mt-40 h-full">
+        <div className="flex sm:flex-col lg:flex-row justify-evenly sm:gap-10 sm:mt-10 md:mt-24 h-full">
           <GetToKnowMeComponent />
           <MySkillsComponent />
         </div>
