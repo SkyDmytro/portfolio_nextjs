@@ -1,13 +1,12 @@
 import download from "../assets/download-2-24.png";
 import { CvButton } from "./CVButton";
-import { downloadCv as downloadCvApi } from "../api/downloadCv";
 import { TitleSkillsPage } from "./TitleSkillsPageComponent";
-import { linkedInLink } from "../helpers/constants";
+import { cvLink, linkedInLink } from "../helpers/constants";
 
 export const GetToKnowMeComponent = () => {
   const downloadCv = (e: React.MouseEvent<HTMLButtonElement>) => {
     e.preventDefault();
-    downloadCvApi();
+    window.location.href = cvLink;
   };
 
   return (

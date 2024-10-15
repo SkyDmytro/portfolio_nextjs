@@ -45,3 +45,5 @@ export const mySkills = [
 export const linkedInLink =
   "https://www.linkedin.com/in/dima-skydan-160010247/";
 export const gitHubLink = "https://github.com/SkyDmytro";
+export const cvLink =
+  "https://drive.google.com/file/d/15h6cf67pk6qUQw2lC5Kcsu1PFJiNJKU9/view?usp=sharing";
