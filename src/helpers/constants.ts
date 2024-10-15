@@ -31,6 +31,7 @@ export const mySkills = [
   "JavaScript",
   "TypeScript",
   "React.js",
+  "React Native",
   "Next.js",
   "Node.js",
   "WebSockets",
