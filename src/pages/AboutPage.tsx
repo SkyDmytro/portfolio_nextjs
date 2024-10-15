@@ -1,4 +1,3 @@
-import React from "react";
 import { PageTitle } from "../components/PageTitle";
 import { GetToKnowMeComponent } from "../components/GetToKnowMeComponent";
 import { MySkillsComponent } from "../components/MySkillsComponent";

@@ -1,4 +1,4 @@
-import React from "react";
+import { ReactElement } from "react";
 
 interface CustomInputProps {
   labelText: string;
@@ -7,7 +7,7 @@ interface CustomInputProps {
 const CustomInput = ({
   labelText,
   ...props
-}: CustomInputProps): React.ReactElement => {
+}: CustomInputProps): ReactElement => {
   return (
     <div className="flex flex-col gap-4">
       <label className="font-bold">{labelText}</label>

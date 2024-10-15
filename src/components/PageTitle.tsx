@@ -1,5 +1,3 @@
-import React from "react";
-
 export interface PageTitleProps {
   title: string;
   subtitle?: string;

@@ -1,16 +1,14 @@
-import React from "react";
+import { ReactNode } from "react";
 import { TechStack } from "./TechStack";
 
 export interface ProjectDescriptionLayoutProps {
-  children: React.ReactNode;
+  children: ReactNode;
   title: string;
   projectUrl: string;
   techStack: string[];
 }
 
-export const ProjectDescriptionLayout: React.FC<
-  ProjectDescriptionLayoutProps
-> = ({
+export const ProjectDescriptionLayout = ({
   children,
   title,
   projectUrl,

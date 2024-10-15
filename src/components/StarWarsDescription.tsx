@@ -1,4 +1,3 @@
-import React from "react";
 import { highlightText } from "../helpers/functions";
 export const StarWarsDescription = () => {
   return (

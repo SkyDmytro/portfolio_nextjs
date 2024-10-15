@@ -1,4 +1,3 @@
-import React from "react";
 import githubIcon from "../assets/githubIcon.svg";
 import linkedInIcon from "../assets/linkedInIcon.svg";
 import { gitHubLink, linkedInLink } from "../helpers/constants";

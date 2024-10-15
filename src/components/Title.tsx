@@ -1,6 +1,6 @@
-import React from "react";
+import { ReactElement } from "react";
 
-export const Title: React.FC = () => {
+export const Title = (): ReactElement => {
   return (
     <div className="text-center">
       <h1 className="text-[62px] font-bold mb-4">Hey, I'm Skydan Dmytro</h1>

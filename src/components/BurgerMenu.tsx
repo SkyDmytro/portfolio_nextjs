@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import "../styles/BurgerMenu.style.css";
 export const BurgerMenu = () => {
   const [isOpen, setIsOpen] = useState(false);
