@@ -26,7 +26,7 @@ export const ProjectDescriptionLayout = ({
           href={projectUrl}
           className="opacity-100 flex items-center gap-2 rounded-xl"
         >
-          <span className="opacity-100">Show Project</span>
+          <span className="opacity-100">Project Showcase</span>
           <img src={redirect} alt="redirect" className="h-4 w-4" />
         </a>
       </div>
