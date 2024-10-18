@@ -1,5 +1,6 @@
-import React from "react";
+import { starWarsProject } from "../helpers/constants";
+import { ProjectPageLayout } from "../components/ProjectPageLayout/ProjectPageLayout";
 
 export const StarWarsPage = () => {
-  return <div>StarWarsPage</div>;
+  return <ProjectPageLayout project={starWarsProject} />;
 };
