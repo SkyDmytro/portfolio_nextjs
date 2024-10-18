@@ -13,7 +13,8 @@ export default {
       lightBlue:"#336D8B",
       primaryFont:"white",
       secondaryFont:"#B8B8B8",
-      gray:"#4A6D7C"
+      gray:"#4A6D7C",
+
     },
     container:{
       center:true,
@@ -22,6 +23,8 @@ export default {
         md: '768px',
         lg: '976px',
         xl: '1440px',
+        xxl: '1600px',
+        xxxl: '1920px',
       }
     },
     screens: {
