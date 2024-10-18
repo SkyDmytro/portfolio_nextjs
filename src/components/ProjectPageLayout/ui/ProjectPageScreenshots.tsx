@@ -15,7 +15,7 @@ export const ProjectPageScreenshots = ({
               src={screen}
               alt="project image"
               key={idx}
-              className="rounded-lg border border-lightBlue "
+              className="rounded-lg ring ring-lightBlue ring-offset-1"
             />
           );
         })}
