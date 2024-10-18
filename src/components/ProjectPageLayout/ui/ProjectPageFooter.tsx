@@ -1,5 +1,3 @@
-import React from "react";
-
 export const ProjectPageFooter = () => {
   return (
     <footer className="bg-blue py-4 ">

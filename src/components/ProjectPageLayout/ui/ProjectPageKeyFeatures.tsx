@@ -1,4 +1,3 @@
-import React from "react";
 import { Feature } from "../../../types/featureTypes";
 
 export const ProjectPageKeyFeatures = ({

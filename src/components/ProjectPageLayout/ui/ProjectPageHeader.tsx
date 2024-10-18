@@ -1,5 +1,4 @@
 import { ChevronLeft } from "lucide-react";
-import React from "react";
 
 export const ProjectPageHeader = ({ projectName }: { projectName: string }) => {
   return (
