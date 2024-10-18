@@ -15,7 +15,7 @@ export const ProjectPageScreenshots = ({
               src={screen}
               alt="project image"
               key={idx}
-              className="rounded-lg ring ring-lightBlue ring-offset-1"
+              className="rounded-lg ring ring-lightBlue ring-offset-1 max-h-[700px]"
             />
           );
         })}
