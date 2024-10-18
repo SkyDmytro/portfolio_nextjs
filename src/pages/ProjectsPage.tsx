@@ -1,9 +1,10 @@
 import { ProjectDescriptionLayout } from "../components/ProjectDescriptionLayout";
 import { PageTitle } from "../components/PageTitle";
-import mobileChat from "../assets/MobileChat.svg";
-import starWars from "../assets/StarWarsProject.png";
+// import mobileChat from "../assets/MobileChat.svg";
+import mobileChat from "../assets/Chat_Project_new.png";
+import starWars from "../assets/StarWarsProject_new.png";
 import { ProjectImage } from "../components/ProjectImage";
-import typingTest from "../assets/TypingTestProject.png";
+import typingTest from "../assets/Typing_testProject_new2.png";
 import {
   keyTechnologiesTypingTestProject,
   mobilChatKeyTechnologies,
