@@ -1,3 +1,8 @@
+import typingTestOverview1 from "../assets/TypingTest_overview_1.png";
+import typingTestOverview2 from "../assets/TypingTest_overview_2.png";
+import typingTestOverview3 from "../assets/TypingTest_overview_3.png";
+import typingTestOverview4 from "../assets/TypingTest_overview_4.png";
+
 export const keyTechnologiesTypingTestProject = [
   "React",
   "TypeScript",
@@ -48,3 +53,10 @@ export const linkedInLink =
 export const gitHubLink = "https://github.com/SkyDmytro";
 export const cvLink =
   "https://drive.google.com/file/d/15h6cf67pk6qUQw2lC5Kcsu1PFJiNJKU9/view?usp=sharing";
+
+export const typingTestOverviewScreenshots = [
+  typingTestOverview1,
+  typingTestOverview3,
+  typingTestOverview4,
+  typingTestOverview2,
+];
