@@ -1,5 +1,5 @@
-import React from "react";
-
+import { ProjectPageLayout } from "../components/ProjectPageLayout/ProjectPageLayout";
+import { mobileChatProject } from "../helpers/constants";
 export const MobileChatPage = () => {
-  return <div>MobileChatPage</div>;
+  return <ProjectPageLayout project={mobileChatProject} />;
 };
