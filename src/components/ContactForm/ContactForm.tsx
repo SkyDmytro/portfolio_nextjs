@@ -1,27 +1,54 @@
+import { useEffect, useState } from "react";
 import { useFetchData } from "../../hooks/useFetchData";
+import { ContactFormValues } from "../../types/formTypes";
 import { useContactForm } from "./hooks/useContactForm";
 import { ContactFormView } from "./ui/ContactFormView";
 
 export const ContactForm = (): JSX.Element => {
+  const [success, setSuccess] = useState(false);
+  const [error, setError] = useState<string | null>(null);
   const { control, errors, handleSubmit } = useContactForm();
-  const { fetchData, data, error, loading } = useFetchData(
-    import.meta.env.VITE_CONTACT_FORM_URL,
-    { method: "POST" }
-  );
+  const {
+    fetchData,
+    data,
+    error: requestError,
+    loading,
+  } = useFetchData("/send-email", {
+    method: "POST",
+  });
 
-  const handleFormSubmit = () => {
-    console.log("1");
-    handleSubmit((data) => fetchData(data));
+  const onSubmit = (data: ContactFormValues) => {
+    fetchData(data);
   };
+
+  useEffect(() => {
+    if (data) {
+      setSuccess(true);
+    }
+
+    const timeout = setTimeout(() => {
+      setSuccess(false);
+    }, 2000);
+    return () => clearTimeout(timeout);
+  }, [data]);
+
+  useEffect(() => {
+    setError(requestError);
+
+    const timeout = setTimeout(() => {
+      setError(null);
+    }, 2000);
+    return () => clearTimeout(timeout);
+  }, [requestError]);
 
   return (
     <ContactFormView
-      data={data}
+      success={success}
       error={error}
       loading={loading}
       control={control}
       validationErrors={errors}
-      handleSubmit={handleFormSubmit}
+      handleSubmit={handleSubmit(onSubmit)}
     />
   );
 };
