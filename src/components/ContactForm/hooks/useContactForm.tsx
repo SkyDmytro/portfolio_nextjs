@@ -21,6 +21,7 @@ export const useContactForm = () => {
     handleSubmit,
     formState: { errors },
     control,
+    reset,
   } = useForm<ContactFormValues>({
     resolver: yupResolver(schema),
     defaultValues: {
@@ -30,5 +31,5 @@ export const useContactForm = () => {
     },
   });
 
-  return { handleSubmit, control, errors };
+  return { handleSubmit, control, errors, reset };
 };

@@ -7,7 +7,7 @@ import { ContactFormView } from "./ui/ContactFormView";
 export const ContactForm = (): JSX.Element => {
   const [success, setSuccess] = useState(false);
   const [error, setError] = useState<string | null>(null);
-  const { control, errors, handleSubmit } = useContactForm();
+  const { control, errors, handleSubmit, reset } = useContactForm();
   const {
     fetchData,
     data,
@@ -24,6 +24,7 @@ export const ContactForm = (): JSX.Element => {
   useEffect(() => {
     if (data) {
       setSuccess(true);
+      reset();
     }
 
     const timeout = setTimeout(() => {
