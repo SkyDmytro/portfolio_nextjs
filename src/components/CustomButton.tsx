@@ -1,4 +1,4 @@
-import { ReactElement } from "react";
+import { ButtonHTMLAttributes, MouseEventHandler, ReactElement } from "react";
 
 /**
  * A custom button component.
@@ -8,22 +8,24 @@ import { ReactElement } from "react";
  * @param {React.MouseEventHandler<HTMLButtonElement>} props.onClick - The function to be called when the button is clicked.
  * @returns {React.ReactElement} A button element with the specified properties.
  */
-
-export interface CustomButtonProps {
+export interface CustomButtonProps
+  extends ButtonHTMLAttributes<HTMLButtonElement> {
   type?: "button" | "submit" | "reset";
   text: string;
-  onClick?: React.MouseEventHandler<HTMLButtonElement>;
+  onClick?: MouseEventHandler<HTMLButtonElement>;
 }
 export const CustomButton = ({
   type = "button",
   text,
   onClick,
+  ...props
 }: CustomButtonProps): ReactElement => {
   return (
     <button
       type={type}
       className="bg-lightBlue w-1/3 self-end hover:bg-primaryFont hover:text-lightBlue text-white font-bold py-2 px-4 rounded"
       onClick={onClick}
+      {...props}
     >
       {text}
     </button>
