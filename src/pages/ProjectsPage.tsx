@@ -33,7 +33,7 @@ export const ProjectsPage = () => {
           <ProjectImage ProjectImageIcon={typingTest} />
 
           <ProjectDescriptionLayout
-            projectUrl="/typingTest"
+            projectUrl="/projects/typingTest"
             title="Typing Speed Training Web Application"
             key={"typingTest"}
             techStack={keyTechnologiesTypingTestProject}
@@ -45,7 +45,7 @@ export const ProjectsPage = () => {
           <ProjectImage ProjectImageIcon={starWars} />
 
           <ProjectDescriptionLayout
-            projectUrl="/starWars"
+            projectUrl="/projects/starWars"
             title="Star Wars Data Base"
             key={"starWars"}
             techStack={starWarstechnologies}
@@ -58,7 +58,7 @@ export const ProjectsPage = () => {
 
           <ProjectDescriptionLayout
             techStack={mobilChatKeyTechnologies}
-            projectUrl="/chat"
+            projectUrl="/projects/chat"
             title="Mobile Mock Chat"
             key={"chat"}
           >

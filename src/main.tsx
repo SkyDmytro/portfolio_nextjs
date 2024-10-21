@@ -20,15 +20,15 @@ const router = createBrowserRouter([
     element: <App />,
   },
   {
-    path: "/typingTest",
+    path: "/projects/typingTest",
     element: <TypingTestProjectPage />,
   },
   {
-    path: "/starWars",
+    path: "/projects/starWars",
     element: <StarWarsPage />,
   },
   {
-    path: "/chat",
+    path: "/projects/chat",
     element: <MobileChatPage />,
   },
 ]);
