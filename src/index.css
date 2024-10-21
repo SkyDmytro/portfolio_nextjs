@@ -71,3 +71,9 @@
   font-family: 'Source Sans Pro Black', sans-serif;
 }
 
+@layer base {
+  :root {
+    --radius: 0.5rem;
+  }
+}
+
