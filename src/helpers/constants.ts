@@ -195,3 +195,14 @@ export const mobileChatProject: ProjectType = {
   conclusion: conclusionChatAppProject,
   screenshots: chatAppScreenshots,
 };
+
+export const TypingTestProject: ProjectType = {
+  url: "https://skytype.vercel.app/",
+  githubUrl: "https://github.com/SkyDmytro/typing_test",
+  description: descriptionTypingTestProject,
+  conclusion: conclusionTypingTestProject,
+  name: "Typing Speed Training Web Application",
+  screenshots: typingTestOverviewScreenshots,
+  keyFeatures: keyFeaturesTypingTest,
+  techStack: keyTechnologiesTypingTestProject,
+};

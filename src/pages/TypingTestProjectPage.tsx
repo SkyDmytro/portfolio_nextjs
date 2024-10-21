@@ -1,23 +1,19 @@
+import { Seo } from "@/components/Seo/Seo";
 import { ProjectPageLayout } from "../components/ProjectPageLayout/ProjectPageLayout";
-import {
-  keyFeaturesTypingTest,
-  keyTechnologiesTypingTestProject,
-  descriptionTypingTestProject,
-  typingTestOverviewScreenshots,
-  conclusionTypingTestProject,
-} from "../helpers/constants";
-import { ProjectType } from "../types/types";
+import { TypingTestProject } from "../helpers/constants";
 
 export const TypingTestProjectPage = () => {
-  const project: ProjectType = {
-    url: "https://skytype.vercel.app/",
-    githubUrl: "https://github.com/SkyDmytro/typing_test",
-    description: descriptionTypingTestProject,
-    conclusion: conclusionTypingTestProject,
-    name: "Typing Speed Training Web Application",
-    screenshots: typingTestOverviewScreenshots,
-    keyFeatures: keyFeaturesTypingTest,
-    techStack: keyTechnologiesTypingTestProject,
-  };
-  return <ProjectPageLayout project={project} />;
+  const project = TypingTestProject;
+  return (
+    <>
+      <Seo
+        title="Typing Test Project"
+        description="Typing Test Project Showcase"
+        image="https://skydmytro.vercel.app/assets/TypingTestSeoPreview.png"
+        imageAlt="Typing test image preview"
+        url="https://skydmytro.vercel.app/"
+      />
+      <ProjectPageLayout project={project} />
+    </>
+  );
 };
