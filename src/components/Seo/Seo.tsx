@@ -9,7 +9,6 @@ interface SeoProps {
 export const Seo = ({ title, description, url, image, imageAlt }: SeoProps) => {
   return (
     <Helmet>
-      <meta charSet="UTF-8" />
       <title>{title}</title>
       <link rel="canonical" href={url} />
 
