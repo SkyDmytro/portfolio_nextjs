@@ -1,4 +1,5 @@
 import { Helmet } from "react-helmet-async";
+
 interface SeoProps {
   title: string;
   description: string;
@@ -6,11 +7,14 @@ interface SeoProps {
   image: string;
   imageAlt: string;
 }
+
 export const Seo = ({ title, description, url, image, imageAlt }: SeoProps) => {
   return (
     <Helmet>
-      <title>{title}</title>
+      <title>{title} | MySiteName</title>
       <link rel="canonical" href={url} />
+      <meta name="description" content={description} />
+      <meta name="robots" content="index,follow" />
 
       <meta property="og:title" content={title} />
       <meta property="og:description" content={description} />
@@ -18,6 +22,10 @@ export const Seo = ({ title, description, url, image, imageAlt }: SeoProps) => {
       <meta property="og:image" content={image} />
       <meta property="og:image:alt" content={imageAlt} />
       <meta property="og:type" content="website" />
+      <meta property="og:image:width" content="1200" />
+      <meta property="og:image:height" content="630" />
+      <meta property="og:locale" content="en_US" />
+      <meta property="og:site_name" content="MySiteName" />
 
       <meta name="twitter:card" content="summary_large_image" />
       <meta name="twitter:title" content={title} />

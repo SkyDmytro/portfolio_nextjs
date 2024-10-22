@@ -1,9 +1,36 @@
 import { Seo } from "@/components/Seo/Seo";
 import { ProjectPageLayout } from "../components/ProjectPageLayout/ProjectPageLayout";
 import { mobileChatProject } from "../helpers/constants";
+import { Helmet } from "react-helmet";
 export const MobileChatPage = () => {
   return (
     <>
+      <Helmet>
+        <title>Mobile Chat App | Skydan Dmytro</title>
+        <link rel="canonical" href="https://skydmytro.vercel.app/chat" />
+        <meta
+          name="description"
+          content="Mobile Chat App Showcase by Skydan Dmytro"
+        />
+        <meta name="robots" content="index,follow" />
+
+        <meta property="og:title" content="Mobile Chat App" />
+        <meta
+          property="og:description"
+          content="Mobile Chat App Showcase by Skydan Dmytro"
+        />
+        <meta
+          property="og:url"
+          content="https://skydmytro.vercel.app/mobile-chat-app"
+        />
+
+        <meta property="og:image:alt" content="Mobile Chat App image preview" />
+        <meta property="og:type" content="website" />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" />
+        <meta property="og:locale" content="en_US" />
+        <meta property="og:site_name" content="Skydan Dmytro" />
+      </Helmet>
       <Seo
         title="Mobile Chat Project"
         description="Mobile Chat Project Showcase"
