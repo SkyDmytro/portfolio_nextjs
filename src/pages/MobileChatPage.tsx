@@ -1,7 +1,7 @@
 import { Seo } from "@/components/Seo/Seo";
 import { ProjectPageLayout } from "../components/ProjectPageLayout/ProjectPageLayout";
 import { mobileChatProject } from "../helpers/constants";
-import { Helmet } from "react-helmet";
+import { Helmet } from "react-helmet-async";
 export const MobileChatPage = () => {
   return (
     <>
