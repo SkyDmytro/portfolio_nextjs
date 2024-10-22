@@ -13,6 +13,7 @@ const App = (): JSX.Element => {
   return (
     <>
       <Seo
+        canonical="/"
         title="Skydan Dmytro"
         description="Portfolio website"
         url="https://skydmytro.vercel.app/"

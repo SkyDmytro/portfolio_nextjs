@@ -10,7 +10,7 @@ export const TypingTestProjectPage = () => {
         <title>Typing Test Project | Skydan Dmytro</title>
         <link
           rel="canonical"
-          href="https://skydmytro.vercel.app/typing-test-project"
+          href="https://skydmytro.vercel.app/projects/typing-test-project"
         />
         <meta
           name="description"
@@ -25,7 +25,7 @@ export const TypingTestProjectPage = () => {
         />
         <meta
           property="og:url"
-          content="https://skydmytro.vercel.app/typing-test-project"
+          content="https://skydmytro.vercel.app/projects/typing-test-project"
         />
         <meta
           property="og:image"

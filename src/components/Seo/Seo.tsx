@@ -6,15 +6,24 @@ interface SeoProps {
   url: string;
   image: string;
   imageAlt: string;
+  canonical?: string;
 }
 
-export const Seo = ({ title, description, url, image, imageAlt }: SeoProps) => {
+export const Seo = ({
+  title,
+  canonical,
+  description,
+  url,
+  image,
+  imageAlt,
+}: SeoProps) => {
   return (
-    <Helmet>
+    <Helmet defer={false}>
       <title>{title} </title>
       <link rel="canonical" href={url} />
       <meta name="description" content={description} />
       <meta name="robots" content="index,follow" />
+      <link rel="canonical" href={canonical} />
 
       <meta property="og:title" content={title} />
       <meta property="og:description" content={description} />
