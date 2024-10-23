@@ -6,20 +6,10 @@ import { ContactPage } from "./pages/ContactPage";
 import { MainPage } from "./pages/MainPage";
 import { ProjectsPage } from "./pages/ProjectsPage";
 import "./styles/hoverAnimation.css";
-import { Seo } from "./components/Seo/Seo";
-import app from "./assets/AppPreview.png";
 
 const App = (): JSX.Element => {
   return (
     <>
-      <Seo
-        canonical="/"
-        title="Skydan Dmytro"
-        description="Portfolio website"
-        url="https://skydmytro.vercel.app/"
-        image={app}
-        imageAlt="Portfolio website image preview"
-      />
       <Header />
       <MainPage />
       <AboutPage />
