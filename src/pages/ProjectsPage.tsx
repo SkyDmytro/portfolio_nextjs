@@ -13,14 +13,7 @@ import {
 import { MobileChatDescription } from "../components/MobileChatDescription";
 import { StarWarsDescription } from "../components/StarWarsDescription";
 import { TypingTestDescription } from "../components/TypingTestDescription";
-import { ReactNode } from "react";
-const ProjectContainer = ({ children }: { children: ReactNode }) => {
-  return (
-    <div className="typing-test flex justify-evenly flex-wrap sm:gap-16 xl:gap-10  ">
-      {children}
-    </div>
-  );
-};
+
 export const ProjectsPage = () => {
   return (
     <section id="projects" className="bg-darkBlue ">
@@ -29,7 +22,7 @@ export const ProjectsPage = () => {
           title="Projects"
           subtitle="Here you will find some of the personal and clients projects that I created with each project containing its own case study"
         />
-        <ProjectContainer>
+        <div className="typing-test flex justify-evenly flex-wrap sm:gap-16 xl:gap-10  ">
           <ProjectImage ProjectImageIcon={typingTest} />
 
           <ProjectDescriptionLayout
@@ -40,8 +33,8 @@ export const ProjectsPage = () => {
           >
             <TypingTestDescription />
           </ProjectDescriptionLayout>
-        </ProjectContainer>
-        <ProjectContainer>
+        </div>
+        <div className="typing-test flex justify-evenly flex-wrap sm:gap-16 xl:gap-10  ">
           <ProjectImage ProjectImageIcon={starWars} />
 
           <ProjectDescriptionLayout
@@ -52,8 +45,8 @@ export const ProjectsPage = () => {
           >
             <StarWarsDescription />
           </ProjectDescriptionLayout>
-        </ProjectContainer>
-        <ProjectContainer>
+        </div>
+        <div className="typing-test flex justify-evenly flex-wrap sm:gap-16 xl:gap-10  ">
           <ProjectImage ProjectImageIcon={mobileChat} />
 
           <ProjectDescriptionLayout
@@ -64,7 +57,7 @@ export const ProjectsPage = () => {
           >
             <MobileChatDescription />
           </ProjectDescriptionLayout>
-        </ProjectContainer>
+        </div>
       </div>
     </section>
   );
