@@ -6,6 +6,7 @@ import { ContactPage } from "./pages/ContactPage";
 import { MainPage } from "./pages/MainPage";
 import { ProjectsPage } from "./pages/ProjectsPage";
 import "./styles/hoverAnimation.css";
+import "./App.css"
 
 const App = (): JSX.Element => {
   return (
