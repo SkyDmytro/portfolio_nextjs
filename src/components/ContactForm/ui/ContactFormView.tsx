@@ -1,12 +1,14 @@
+import { FormEventHandler } from 'react';
 import { Control, Controller, DeepPartial } from 'react-hook-form';
+
+import { ContactFormValues } from '../../../types/formTypes';
 import { CustomButton } from '../../CustomButton';
 import CustomInput from '../../CustomInput';
 import { FormMessageTextArea } from '../../FormMessageTextArea';
-import { FormEventHandler } from 'react';
-import { ContactFormValues } from '../../../types/formTypes';
-import { SuccessForm } from './SuccessForm';
 import { ErrorForm } from './ErrorForm';
 import { LoadingForm } from './LoadingForm';
+import { SuccessForm } from './SuccessForm';
+
 interface ContactFormViewProps {
   control: Control<ContactFormValues>;
   validationErrors: DeepPartial<

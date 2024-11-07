@@ -1,4 +1,5 @@
 import '../../../styles/border.css';
+
 export const ProjectPageScreenshots = ({
   screenshots,
 }: {

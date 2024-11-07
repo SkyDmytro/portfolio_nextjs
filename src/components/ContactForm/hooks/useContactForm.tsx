@@ -1,7 +1,8 @@
 // ContactFormController.ts
-import { useForm } from 'react-hook-form';
 import { yupResolver } from '@hookform/resolvers/yup';
+import { useForm } from 'react-hook-form';
 import * as yup from 'yup';
+
 import { ContactFormValues } from '../../../types/formTypes';
 
 const schema = yup.object().shape({

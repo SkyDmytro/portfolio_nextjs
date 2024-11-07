@@ -1,4 +1,5 @@
 import { highlightText } from '../helpers/functions';
+
 export const StarWarsDescription = () => {
   return (
     <span>

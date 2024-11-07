@@ -1,12 +1,13 @@
 import { ReactElement } from 'react';
-import { ProjectPageHeader } from './ui/ProjectPageHeader';
-import { ProjectPageProjectOverview } from './ui/ProjectPageProjectOverview';
-import { ProjectPageScreenshots } from './ui/ProjectPageScreenshots';
-import { ProjectPageKeyFeatures } from './ui/ProjectPageKeyFeatures';
-import { ProjectPageTechStack } from './ui/ProjectPageTechStack';
+
 import { ProjectType } from '../../types/types';
 import { ProjectPageConclusion } from './ui/ProjectPageConclusion';
 import { ProjectPageFooter } from './ui/ProjectPageFooter';
+import { ProjectPageHeader } from './ui/ProjectPageHeader';
+import { ProjectPageKeyFeatures } from './ui/ProjectPageKeyFeatures';
+import { ProjectPageProjectOverview } from './ui/ProjectPageProjectOverview';
+import { ProjectPageScreenshots } from './ui/ProjectPageScreenshots';
+import { ProjectPageTechStack } from './ui/ProjectPageTechStack';
 
 interface ProjectPageLayoutProps {
   project: ProjectType;

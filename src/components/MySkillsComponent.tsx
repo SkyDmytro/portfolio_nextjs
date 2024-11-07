@@ -1,6 +1,6 @@
 import { mySkills } from '../helpers/constants';
-import { TitleSkillsPage } from './TitleSkillsPageComponent';
 import { MySkills } from './MySkills';
+import { TitleSkillsPage } from './TitleSkillsPageComponent';
 
 export const MySkillsComponent = () => {
   return (

@@ -1,7 +1,7 @@
 import download from '../assets/download-2-24.png';
+import { cvLink, linkedInLink } from '../helpers/constants';
 import { CvButton } from './CVButton';
 import { TitleSkillsPage } from './TitleSkillsPageComponent';
-import { cvLink, linkedInLink } from '../helpers/constants';
 
 export const GetToKnowMeComponent = () => {
   const downloadCv = (e: React.MouseEvent<HTMLButtonElement>) => {

@@ -1,5 +1,6 @@
-import { PageTitle } from '../components/PageTitle';
 import { ContactForm } from '../components/ContactForm/ContactForm';
+import { PageTitle } from '../components/PageTitle';
+
 export const ContactPage = () => {
   return (
     <section id="contact" className="bg-blue pt-10">

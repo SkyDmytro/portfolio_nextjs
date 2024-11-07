@@ -1,7 +1,8 @@
 import { ReactNode } from 'react';
-import { TechStack } from './TechStack';
-import '../styles/buttonAnimation.css';
+
 import redirect from '../assets/icons8-share-24.png';
+import '../styles/buttonAnimation.css';
+import { TechStack } from './TechStack';
 
 export interface ProjectDescriptionLayoutProps {
   children: ReactNode;

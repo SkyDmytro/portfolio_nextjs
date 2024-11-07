@@ -1,4 +1,5 @@
 import { ReactElement } from 'react';
+
 import BlurFade from './ui/blur-fade';
 
 export const Title = (): ReactElement => {

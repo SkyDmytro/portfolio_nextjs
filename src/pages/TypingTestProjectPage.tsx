@@ -1,6 +1,7 @@
+import { Seo } from '@/components/Seo/Seo';
+
 import { ProjectPageLayout } from '../components/ProjectPageLayout/ProjectPageLayout';
 import { TypingTestProject } from '../helpers/constants';
-import { Seo } from '@/components/Seo/Seo';
 
 export const TypingTestProjectPage = () => {
   const project = TypingTestProject;

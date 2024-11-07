@@ -1,4 +1,5 @@
 import arrow from '../assets/up-arrow-button-svgrepo-com.svg';
+
 export const ScrollButton = () => {
   const handleScrollOnTop = () => {
     window.scrollTo(0, 0);

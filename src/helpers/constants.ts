@@ -1,17 +1,14 @@
-import typingTestOverview1 from '../assets/TypingTest_overview_1.png';
-import typingTestOverview2 from '../assets/TypingTest_overview_2.png';
-import typingTestOverview3 from '../assets/TypingTest_overview_3.png';
-import typingTestOverview4 from '../assets/TypingTest_overview_4.png';
-
-import StarWarsOverview1 from '../assets/StarWars_overview_1.png';
-import StarWarsOverview2 from '../assets/StarWars_overview_2.png';
-import StarWarsOverview3 from '../assets/StarWars_overview_3.png';
-
 import MobileChatOverview1 from '../assets/Chat_App_overview_1.png';
 import MobileChatOverview2 from '../assets/Chat_App_overview_2.png';
 import MobileChatOverview3 from '../assets/Chat_App_overview_3.png';
 import MobileChatOverview4 from '../assets/Chat_App_overview_4.png';
-
+import StarWarsOverview1 from '../assets/StarWars_overview_1.png';
+import StarWarsOverview2 from '../assets/StarWars_overview_2.png';
+import StarWarsOverview3 from '../assets/StarWars_overview_3.png';
+import typingTestOverview1 from '../assets/TypingTest_overview_1.png';
+import typingTestOverview2 from '../assets/TypingTest_overview_2.png';
+import typingTestOverview3 from '../assets/TypingTest_overview_3.png';
+import typingTestOverview4 from '../assets/TypingTest_overview_4.png';
 import { Feature } from '../types/featureTypes';
 import { ProjectType } from '../types/types';
 
