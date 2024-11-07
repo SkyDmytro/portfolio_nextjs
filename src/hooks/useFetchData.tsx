@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState } from 'react';
 
 /**
  * A hook for fetching data from a URL.
@@ -29,9 +29,9 @@ export function useFetchData<T>(
       console.log(options);
       const response = await fetch(fullUrl, {
         ...options,
-        method: options.method || "GET",
+        method: options.method || 'GET',
         headers: {
-          "Content-Type": "application/json",
+          'Content-Type': 'application/json',
           ...options.headers,
         },
         body: JSON.stringify(body) || undefined,

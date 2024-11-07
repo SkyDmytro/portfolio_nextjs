@@ -1,5 +1,5 @@
-import useMediaQuery from "../hooks/useMediaQuery";
-import { BurgerMenu } from "./BurgerMenu";
+import useMediaQuery from '../hooks/useMediaQuery';
+import { BurgerMenu } from './BurgerMenu';
 export const HeaderNavigarionMenu = () => {
   const isMobile = useMediaQuery(768);
   return (

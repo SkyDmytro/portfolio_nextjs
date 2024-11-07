@@ -1,4 +1,4 @@
-import { ButtonHTMLAttributes, MouseEventHandler, ReactElement } from "react";
+import { ButtonHTMLAttributes, MouseEventHandler, ReactElement } from 'react';
 
 /**
  * A custom button component.
@@ -10,12 +10,12 @@ import { ButtonHTMLAttributes, MouseEventHandler, ReactElement } from "react";
  */
 export interface CustomButtonProps
   extends ButtonHTMLAttributes<HTMLButtonElement> {
-  type?: "button" | "submit" | "reset";
+  type?: 'button' | 'submit' | 'reset';
   text: string;
   onClick?: MouseEventHandler<HTMLButtonElement>;
 }
 export const CustomButton = ({
-  type = "button",
+  type = 'button',
   text,
   onClick,
   ...props

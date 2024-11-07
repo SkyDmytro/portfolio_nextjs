@@ -1,4 +1,4 @@
-import { MailCheck } from "lucide-react";
+import { MailCheck } from 'lucide-react';
 
 export const SuccessForm = () => {
   return (

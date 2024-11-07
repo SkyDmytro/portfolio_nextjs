@@ -1,7 +1,7 @@
-import download from "../assets/download-2-24.png";
-import { CvButton } from "./CVButton";
-import { TitleSkillsPage } from "./TitleSkillsPageComponent";
-import { cvLink, linkedInLink } from "../helpers/constants";
+import download from '../assets/download-2-24.png';
+import { CvButton } from './CVButton';
+import { TitleSkillsPage } from './TitleSkillsPageComponent';
+import { cvLink, linkedInLink } from '../helpers/constants';
 
 export const GetToKnowMeComponent = () => {
   const downloadCv = (e: React.MouseEvent<HTMLButtonElement>) => {
@@ -26,14 +26,14 @@ export const GetToKnowMeComponent = () => {
         </p>
         <p>You can explore my portfolio below to see examples of my work.</p>
         <p>
-          Feel free to connect with me on{" "}
+          Feel free to connect with me on{' '}
           <a
             href={linkedInLink}
             className="font-bold underline"
             target="_blank"
           >
             LinkedIn.
-          </a>{" "}
+          </a>{' '}
           I'm open to job opportunities where I can contribute, learn and grow.
         </p>
       </div>

@@ -1,5 +1,5 @@
-import { ReactElement } from "react";
-import { HeaderNavigarionMenu } from "./HeaderNavigarionMenu";
+import { ReactElement } from 'react';
+import { HeaderNavigarionMenu } from './HeaderNavigarionMenu';
 
 export const Header = (): ReactElement => {
   return (

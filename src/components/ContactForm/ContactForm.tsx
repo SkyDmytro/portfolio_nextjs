@@ -1,8 +1,8 @@
-import { useEffect, useState } from "react";
-import { useFetchData } from "../../hooks/useFetchData";
-import { ContactFormValues } from "../../types/formTypes";
-import { useContactForm } from "./hooks/useContactForm";
-import { ContactFormView } from "./ui/ContactFormView";
+import { useEffect, useState } from 'react';
+import { useFetchData } from '../../hooks/useFetchData';
+import { ContactFormValues } from '../../types/formTypes';
+import { useContactForm } from './hooks/useContactForm';
+import { ContactFormView } from './ui/ContactFormView';
 
 export const ContactForm = (): JSX.Element => {
   const [success, setSuccess] = useState(false);
@@ -13,8 +13,8 @@ export const ContactForm = (): JSX.Element => {
     data,
     error: requestError,
     loading,
-  } = useFetchData("/send-email", {
-    method: "POST",
+  } = useFetchData('/send-email', {
+    method: 'POST',
   });
 
   const onSubmit = (data: ContactFormValues) => {

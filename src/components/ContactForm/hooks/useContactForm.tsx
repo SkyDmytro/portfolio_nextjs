@@ -1,8 +1,8 @@
 // ContactFormController.ts
-import { useForm } from "react-hook-form";
-import { yupResolver } from "@hookform/resolvers/yup";
-import * as yup from "yup";
-import { ContactFormValues } from "../../../types/formTypes";
+import { useForm } from 'react-hook-form';
+import { yupResolver } from '@hookform/resolvers/yup';
+import * as yup from 'yup';
+import { ContactFormValues } from '../../../types/formTypes';
 
 const schema = yup.object().shape({
   name: yup.string().required().min(2),
@@ -11,7 +11,7 @@ const schema = yup.object().shape({
     .required()
     .matches(
       /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i,
-      "Email must be a valid email address"
+      'Email must be a valid email address'
     ),
   message: yup.string().required(),
 });
@@ -25,9 +25,9 @@ export const useContactForm = () => {
   } = useForm<ContactFormValues>({
     resolver: yupResolver(schema),
     defaultValues: {
-      name: "",
-      email: "",
-      message: "",
+      name: '',
+      email: '',
+      message: '',
     },
   });
 

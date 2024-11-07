@@ -1,4 +1,4 @@
-import { Github, Globe } from "lucide-react";
+import { Github, Globe } from 'lucide-react';
 
 export const ProjectPageProjectOverview = ({
   projectDescription,

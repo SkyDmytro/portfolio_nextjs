@@ -27,19 +27,15 @@ You can view the live version of this portfolio at [**My Portfolio Website**](ht
 This portfolio is built using the following technologies:
 
 - **Frontend**:
-    
-    - HTML5
-    - CSS3 (Flexbox/Grid, Animations)
-    - JavaScript (ES6+)
-    - React.js
+
+  - HTML5
+  - CSS3 (Flexbox/Grid, Animations)
+  - JavaScript (ES6+)
+  - React.js
 
 - **Design**:
-    
-    - Figma
-    
+  - Figma
 - **Deployment**:
-    
-    - Vercel
-
+  - Vercel
 
 Thank you for visiting my portfolio! 😊 If you have any feedback or suggestions, feel free to reach out via the contact form.

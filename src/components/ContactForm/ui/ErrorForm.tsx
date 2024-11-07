@@ -1,4 +1,4 @@
-import { MailWarning } from "lucide-react";
+import { MailWarning } from 'lucide-react';
 
 export const ErrorForm = ({ error }: { error: string | null }) => {
   return (

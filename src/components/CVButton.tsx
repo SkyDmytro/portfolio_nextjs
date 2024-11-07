@@ -1,4 +1,4 @@
-import { MouseEventHandler, ReactElement } from "react";
+import { MouseEventHandler, ReactElement } from 'react';
 
 /**
  * A custom button component.
@@ -10,13 +10,13 @@ import { MouseEventHandler, ReactElement } from "react";
  */
 
 export interface CustomButtonProps {
-  type?: "button" | "submit" | "reset";
+  type?: 'button' | 'submit' | 'reset';
   text: string;
   onClick?: MouseEventHandler<HTMLButtonElement>;
   icon?: string;
 }
 export const CvButton = ({
-  type = "button",
+  type = 'button',
   text,
   onClick,
   icon,

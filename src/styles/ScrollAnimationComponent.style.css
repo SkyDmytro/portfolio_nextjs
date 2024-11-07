@@ -1,7 +1,6 @@
 .scroll-container {
-
   transform: translateX(-50%);
-  overflow: hidden; 
+  overflow: hidden;
 }
 
 .scroll-dot {

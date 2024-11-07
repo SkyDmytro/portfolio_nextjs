@@ -1,4 +1,4 @@
-import { Feature } from "../../../types/featureTypes";
+import { Feature } from '../../../types/featureTypes';
 
 export const ProjectPageKeyFeatures = ({
   features,

@@ -1,18 +1,18 @@
-import { ProjectDescriptionLayout } from "../components/ProjectDescriptionLayout";
-import { PageTitle } from "../components/PageTitle";
+import { ProjectDescriptionLayout } from '../components/ProjectDescriptionLayout';
+import { PageTitle } from '../components/PageTitle';
 // import mobileChat from "../assets/MobileChat.svg";
-import mobileChat from "../assets/Chat_Project_new.png";
-import starWars from "../assets/StarWarsProject_new.png";
-import { ProjectImage } from "../components/ProjectImage";
-import typingTest from "../assets/Typing_testProject_new2.png";
+import mobileChat from '../assets/Chat_Project_new.png';
+import starWars from '../assets/StarWarsProject_new.png';
+import { ProjectImage } from '../components/ProjectImage';
+import typingTest from '../assets/Typing_testProject_new2.png';
 import {
   keyTechnologiesTypingTestProject,
   mobilChatKeyTechnologies,
   starWarstechnologies,
-} from "../helpers/constants";
-import { MobileChatDescription } from "../components/MobileChatDescription";
-import { StarWarsDescription } from "../components/StarWarsDescription";
-import { TypingTestDescription } from "../components/TypingTestDescription";
+} from '../helpers/constants';
+import { MobileChatDescription } from '../components/MobileChatDescription';
+import { StarWarsDescription } from '../components/StarWarsDescription';
+import { TypingTestDescription } from '../components/TypingTestDescription';
 
 export const ProjectsPage = () => {
   return (
@@ -28,7 +28,7 @@ export const ProjectsPage = () => {
           <ProjectDescriptionLayout
             projectUrl="/projects/typingTest"
             title="Typing Speed Training Web Application"
-            key={"typingTest"}
+            key={'typingTest'}
             techStack={keyTechnologiesTypingTestProject}
           >
             <TypingTestDescription />
@@ -40,7 +40,7 @@ export const ProjectsPage = () => {
           <ProjectDescriptionLayout
             projectUrl="/projects/starWars"
             title="Star Wars Data Base"
-            key={"starWars"}
+            key={'starWars'}
             techStack={starWarstechnologies}
           >
             <StarWarsDescription />
@@ -53,7 +53,7 @@ export const ProjectsPage = () => {
             techStack={mobilChatKeyTechnologies}
             projectUrl="/projects/chat"
             title="Mobile Mock Chat"
-            key={"chat"}
+            key={'chat'}
           >
             <MobileChatDescription />
           </ProjectDescriptionLayout>

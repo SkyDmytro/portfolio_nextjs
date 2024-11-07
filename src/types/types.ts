@@ -1,4 +1,4 @@
-import { Feature } from "./featureTypes";
+import { Feature } from './featureTypes';
 
 export interface ProjectType {
   name: string;

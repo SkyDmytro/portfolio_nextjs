@@ -63,11 +63,11 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-.font-bold{
+.font-bold {
   font-family: 'Source Sans Pro Bold', sans-serif;
 }
 
-.font-semibold{
+.font-semibold {
   font-family: 'Source Sans Pro Black', sans-serif;
 }
 
@@ -76,4 +76,3 @@
     --radius: 0.5rem;
   }
 }
-

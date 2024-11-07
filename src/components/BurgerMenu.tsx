@@ -1,5 +1,5 @@
-import { useState } from "react";
-import "../styles/BurgerMenu.style.css";
+import { useState } from 'react';
+import '../styles/BurgerMenu.style.css';
 export const BurgerMenu = () => {
   const [isOpen, setIsOpen] = useState(false);
 
@@ -14,7 +14,7 @@ export const BurgerMenu = () => {
   return (
     <div className="burger-menu">
       <div
-        className={`burger-icon ${isOpen ? "open" : ""}`}
+        className={`burger-icon ${isOpen ? 'open' : ''}`}
         onClick={toggleMenu}
       >
         <div className="line"></div>

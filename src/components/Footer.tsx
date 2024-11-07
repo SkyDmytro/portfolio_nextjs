@@ -1,6 +1,6 @@
-import githubIcon from "../assets/githubIcon.svg";
-import linkedInIcon from "../assets/linkedInIcon.svg";
-import { gitHubLink, linkedInLink } from "../helpers/constants";
+import githubIcon from '../assets/githubIcon.svg';
+import linkedInIcon from '../assets/linkedInIcon.svg';
+import { gitHubLink, linkedInLink } from '../helpers/constants';
 
 export const Footer = () => {
   return (

@@ -1,7 +1,7 @@
-import { SocialsMainPage } from "../components/SocialsMainPage";
-import { Title } from "../components/Title";
-import { ScrollAnimationComponent } from "../components/ScrollAnimationComponent";
-import { ReactElement } from "react";
+import { SocialsMainPage } from '../components/SocialsMainPage';
+import { Title } from '../components/Title';
+import { ScrollAnimationComponent } from '../components/ScrollAnimationComponent';
+import { ReactElement } from 'react';
 
 export const MainPage = (): ReactElement => {
   return (
