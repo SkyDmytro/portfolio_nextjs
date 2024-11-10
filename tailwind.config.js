@@ -1,7 +1,14 @@
 /** @type {import('tailwindcss').Config} */
 export default {
   darkMode: ['class'],
-  content: ['./src/**/*.{js,jsx,ts,tsx}', './public/index.html'],
+  content: [
+    './app/**/*.{js,ts,jsx,tsx,mdx}',
+    './pages/**/*.{js,ts,jsx,tsx,mdx}',
+    './components/**/*.{js,ts,jsx,tsx,mdx}',
+
+    // Or if using `src` directory:
+    './src/**/*.{js,ts,jsx,tsx,mdx}',
+  ],
   theme: {
     extend: {
       borderRadius: {
@@ -27,7 +34,7 @@ export default {
         lg: '976px',
         xl: '1440px',
         xxl: '1600px',
-        xxxl: '1920px',
+        xxxl: '1800px',
       },
     },
     screens: {
