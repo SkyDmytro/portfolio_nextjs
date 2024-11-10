@@ -4,10 +4,9 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite",
-    "build": "tsc -b && vite build",
-    "lint": "eslint .",
-    "preview": "vite preview",
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
     "format": "prettier --write ."
   },
   "dependencies": {
@@ -17,6 +16,7 @@
     "dotenv": "^16.4.5",
     "framer-motion": "^11.11.9",
     "lucide-react": "^0.453.0",
+    "next": "^15.0.3",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "react-helmet": "^6.1.0",
