@@ -1,10 +1,12 @@
 import { useState } from 'react';
 
+import { API_URL } from '../config';
+
 /**
  * A hook for fetching data from a URL.
  * @param {string} url The URL to fetch from.
  * @param {RequestInit} [options] The options for the fetch call.
- * @returns {{data: any, loading: boolean, error: string | null, fetchData: (body: any) => void}} A response object with the data, loading state, error message, and a function to fetch the data.
+ * @returns {{data: any, loading: boolean, error: string | null, fetchData: (body: unknown) => void}} A response object with the data, loading state, error message, and a function to fetch the data.
  */
 export function useFetchData<T>(
   url: string,
@@ -13,17 +15,17 @@ export function useFetchData<T>(
   data: T | null;
   loading: boolean;
   error: string | null;
-  fetchData: (body?: any) => void;
+  fetchData: (body?: unknown) => void;
 } {
   const [data, setData] = useState<T | null>(null);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
 
-  const fetchData = async (body: any) => {
+  const fetchData = async (body: unknown) => {
     console.log(body);
     setLoading(true);
     setError(null);
-    const fullUrl = import.meta.env.VITE_BASE_API_URL + url;
+    const fullUrl = API_URL + url;
 
     try {
       console.log(options);

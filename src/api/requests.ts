@@ -1,3 +1,5 @@
+import { API_URL } from '../config';
+
 const requestPost = async <T>(url: string, data?: unknown): Promise<T> => {
   return fetch(url, {
     method: 'POST',
@@ -21,11 +23,11 @@ export const requestGet = async <T>(url: string): Promise<T> => {
 };
 
 export const postData = async (url: string, data: unknown) => {
-  const fullUrl = import.meta.env.VITE_BASE_API_URL + url;
+  const fullUrl = API_URL + url;
   requestPost(fullUrl, data);
 };
 
 export const getData = async (url: string) => {
-  const fullUrl = import.meta.env.VITE_BASE_API_URL + url;
+  const fullUrl = API_URL + url;
   return requestGet(fullUrl);
 };
