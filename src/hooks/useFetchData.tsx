@@ -38,10 +38,8 @@ export function useFetchData<T>(
         },
         body: JSON.stringify(body) || undefined,
       });
-      // console.log(response);
       if (!response.ok) {
-        // console.log(response);
-        throw new Error(`Ошибка: ${response.status}`);
+        throw new Error(`Error: ${response.status}`);
       }
 
       const result = await response.json();

@@ -4,7 +4,7 @@ import { CvButton } from './CVButton';
 import { TitleSkillsPage } from './TitleSkillsPageComponent';
 
 export const GetToKnowMeComponent = () => {
-  const downloadCv = (e: React.MouseEvent<HTMLButtonElement>) => {
+  const getCV = (e: React.MouseEvent<HTMLButtonElement>) => {
     e.preventDefault();
     window.location.href = cvLink;
   };
@@ -37,7 +37,7 @@ export const GetToKnowMeComponent = () => {
           I'm open to job opportunities where I can contribute, learn and grow.
         </p>
       </div>
-      <CvButton text="CV" icon={download} onClick={downloadCv} />
+      <CvButton text="CV" icon={download} onClick={getCV} />
     </div>
   );
 };
