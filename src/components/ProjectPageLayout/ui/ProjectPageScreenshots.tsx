@@ -1,3 +1,5 @@
+import Image from 'next/image';
+
 import '../../../styles/border.css';
 
 export const ProjectPageScreenshots = ({
@@ -12,11 +14,11 @@ export const ProjectPageScreenshots = ({
       <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
         {screenshots.map((screen, idx) => {
           return (
-            <img
+            <Image
               src={screen}
               alt="project image"
               key={idx}
-              className="rounded-lg ring ring-lightBlue ring-offset-1 max-h-[700px]"
+              className="rounded-lg ring ring-lightBlue ring-offset-1 max-h-[700px] w-auto"
             />
           );
         })}

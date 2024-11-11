@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import { MouseEventHandler, ReactElement } from 'react';
 
 /**
@@ -28,7 +29,7 @@ export const CvButton = ({
       onClick={onClick}
     >
       {icon && (
-        <img src={icon} alt="icon" className=" absolute h-5 w-5 left-2" />
+        <Image src={icon} alt="icon" className=" absolute h-5 w-5 left-2" />
       )}
       <span>{text}</span>
     </button>

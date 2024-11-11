@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import { ReactNode } from 'react';
 
 import redirect from '../assets/icons8-share-24.png';
@@ -28,7 +29,7 @@ export const ProjectDescriptionLayout = ({
           className="opacity-100 flex items-center gap-2 rounded-xl"
         >
           <span className="opacity-100">Project Showcase</span>
-          <img src={redirect} alt="redirect" className="h-4 w-4" />
+          <Image src={redirect} alt="redirect" className="h-4 w-4" />
         </a>
       </div>
     </div>

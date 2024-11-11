@@ -1,3 +1,5 @@
+import Image from 'next/image';
+
 import githubIcon from '../assets/githubIcon.svg';
 import linkedInIcon from '../assets/linkedInIcon.svg';
 import { gitHubLink, linkedInLink } from '../helpers/constants';
@@ -16,7 +18,7 @@ export const Footer = () => {
             rel="noreferrer"
             className="flex items-center gap-2"
           >
-            <img src={githubIcon} alt="GitHub icon" className="h-8 w-8" />
+            <Image src={githubIcon} alt="GitHub icon" className="h-8 w-8" />
           </a>
           <a
             href={linkedInLink}
@@ -24,7 +26,7 @@ export const Footer = () => {
             rel="noreferrer"
             className="flex items-center gap-2"
           >
-            <img src={linkedInIcon} alt="LinkedIn icon" className="h-8 w-8" />
+            <Image src={linkedInIcon} alt="LinkedIn icon" className="h-8 w-8" />
           </a>
         </div>
       </div>
