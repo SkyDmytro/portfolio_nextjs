@@ -4,7 +4,7 @@ import { ScrollAnimationComponent } from '../components/ScrollAnimationComponent
 import { SocialsMainPage } from '../components/SocialsMainPage';
 import { Title } from '../components/Title';
 
-export const MainPage = (): ReactElement => {
+const MainPage = (): ReactElement => {
   return (
     <section className="bg-darkBlue h-screen" id="home">
       <SocialsMainPage />
@@ -15,3 +15,5 @@ export const MainPage = (): ReactElement => {
     </section>
   );
 };
+
+export default MainPage;

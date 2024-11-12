@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 
 import '../index.css';
 
+// eslint-disable-next-line react-refresh/only-export-components
 export const metadata: Metadata = {
   title: 'Skydan Dmytro',
   description: 'Portfolio Website for Skydan Dmytro',

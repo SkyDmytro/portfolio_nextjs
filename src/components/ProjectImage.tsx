@@ -1,7 +1,7 @@
-import Image from 'next/image';
+import Image, { StaticImageData } from 'next/image';
 
 export interface ProjectImageProps {
-  ProjectImageIcon: string;
+  ProjectImageIcon: StaticImageData;
 }
 
 export const ProjectImage = ({ ProjectImageIcon }: ProjectImageProps) => (

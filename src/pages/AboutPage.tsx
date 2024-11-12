@@ -2,7 +2,7 @@ import { GetToKnowMeComponent } from '../components/GetToKnowMeComponent';
 import { MySkillsComponent } from '../components/MySkillsComponent';
 import { PageTitle } from '../components/PageTitle';
 
-export const AboutPage = () => {
+const AboutPage = () => {
   return (
     <section id="about" className="bg-blue min-h-screen ">
       <div className="container py-10 ">
@@ -19,3 +19,5 @@ export const AboutPage = () => {
     </section>
   );
 };
+
+export default AboutPage;

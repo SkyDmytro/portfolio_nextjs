@@ -14,7 +14,7 @@ import {
   starWarstechnologies,
 } from '../helpers/constants';
 
-export const ProjectsPage = () => {
+const ProjectsPage = () => {
   return (
     <section id="projects" className="bg-darkBlue ">
       <div className="container flex flex-col gap-24 pt-10 pb-10">
@@ -62,3 +62,5 @@ export const ProjectsPage = () => {
     </section>
   );
 };
+
+export default ProjectsPage;

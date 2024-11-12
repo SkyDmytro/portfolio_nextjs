@@ -1,4 +1,4 @@
-import Image from 'next/image';
+import Image, { StaticImageData } from 'next/image';
 import { MouseEventHandler, ReactElement } from 'react';
 
 /**
@@ -14,7 +14,7 @@ export interface CustomButtonProps {
   type?: 'button' | 'submit' | 'reset';
   text: string;
   onClick?: MouseEventHandler<HTMLButtonElement>;
-  icon?: string;
+  icon?: StaticImageData;
 }
 export const CvButton = ({
   type = 'button',

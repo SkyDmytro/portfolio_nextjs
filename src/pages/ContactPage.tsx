@@ -1,7 +1,7 @@
 import { ContactForm } from '../components/ContactForm/ContactForm';
 import { PageTitle } from '../components/PageTitle';
 
-export const ContactPage = () => {
+const ContactPage = () => {
   return (
     <section id="contact" className="bg-blue pt-10">
       <div className="container py-10 flex flex-col gap-24">
@@ -14,3 +14,5 @@ export const ContactPage = () => {
     </section>
   );
 };
+
+export default ContactPage;

@@ -3,6 +3,7 @@ import { Metadata } from 'next';
 import { ProjectPageLayout } from '../../../components/ProjectPageLayout/ProjectPageLayout';
 import { TypingTestProject } from '../../../helpers/constants';
 
+// eslint-disable-next-line react-refresh/only-export-components
 export const metadata: Metadata = {
   title: 'Typing Test Project',
   description:

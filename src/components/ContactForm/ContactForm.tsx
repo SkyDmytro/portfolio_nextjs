@@ -34,6 +34,7 @@ export const ContactForm = (): JSX.Element => {
       setSuccess(false);
     }, 2000);
     return () => clearTimeout(timeout);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [data]);
 
   useEffect(() => {
