@@ -31,6 +31,7 @@ This portfolio is built using the following technologies:
   - HTML5
   - CSS3 (Flexbox/Grid, Animations)
   - JavaScript (ES6+)
+  - Nextjs
   - React.js
 
 - **Design**:
