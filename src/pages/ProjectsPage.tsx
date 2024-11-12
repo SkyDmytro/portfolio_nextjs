@@ -1,7 +1,7 @@
 // import mobileChat from "../assets/MobileChat.svg";
-import mobileChat from '../assets/Chat_Project_new.png';
-import starWars from '../assets/StarWarsProject_new.png';
-import typingTest from '../assets/Typing_testProject_new2.png';
+import mobileChat from '../../public/Chat_Project_new.png';
+import starWars from '../../public/StarWarsProject_new.png';
+import typingTest from '../../public/Typing_testProject_new2.png';
 import { MobileChatDescription } from '../components/MobileChatDescription';
 import { PageTitle } from '../components/PageTitle';
 import { ProjectDescriptionLayout } from '../components/ProjectDescriptionLayout';
@@ -34,7 +34,7 @@ export const ProjectsPage = () => {
             <TypingTestDescription />
           </ProjectDescriptionLayout>
         </div>
-        <div className="typing-test flex justify-evenly flex-wrap sm:gap-16 xl:gap-10  ">
+        <div className=" flex justify-evenly flex-wrap sm:gap-16 xl:gap-10  ">
           <ProjectImage ProjectImageIcon={starWars} />
 
           <ProjectDescriptionLayout
@@ -46,7 +46,7 @@ export const ProjectsPage = () => {
             <StarWarsDescription />
           </ProjectDescriptionLayout>
         </div>
-        <div className="typing-test flex justify-evenly flex-wrap sm:gap-16 xl:gap-10  ">
+        <div className="flex justify-evenly flex-wrap sm:gap-16 xl:gap-10  ">
           <ProjectImage ProjectImageIcon={mobileChat} />
 
           <ProjectDescriptionLayout

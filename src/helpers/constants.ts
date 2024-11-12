@@ -1,14 +1,14 @@
-import MobileChatOverview1 from '../assets/Chat_App_overview_1.png';
-import MobileChatOverview2 from '../assets/Chat_App_overview_2.png';
-import MobileChatOverview3 from '../assets/Chat_App_overview_3.png';
-import MobileChatOverview4 from '../assets/Chat_App_overview_4.png';
-import StarWarsOverview1 from '../assets/StarWars_overview_1.png';
-import StarWarsOverview2 from '../assets/StarWars_overview_2.png';
-import StarWarsOverview3 from '../assets/StarWars_overview_3.png';
-import typingTestOverview1 from '../assets/TypingTest_overview_1.png';
-import typingTestOverview2 from '../assets/TypingTest_overview_2.png';
-import typingTestOverview3 from '../assets/TypingTest_overview_3.png';
-import typingTestOverview4 from '../assets/TypingTest_overview_4.png';
+// import MobileChatOverview1 from '../../public/Chat_App_overview_1.png';
+// import MobileChatOverview2 from '../../public/Chat_App_overview_2.png';
+// import MobileChatOverview3 from '../../public/Chat_App_overview_3.png';
+// import MobileChatOverview4 from '../../public/Chat_App_overview_4.png';
+// import StarWarsOverview1 from '../../public/StarWars_overview_1.png';
+// import StarWarsOverview2 from '../../public/StarWars_overview_2.png';
+// import StarWarsOverview3 from '../../public/StarWars_overview_3.png';
+// import typingTestOverview1 from '../../public/TypingTest_overview_1.png';
+// import typingTestOverview2 from '../../public/TypingTest_overview_2.png';
+// import typingTestOverview3 from '../../public/TypingTest_overview_3.png';
+// import typingTestOverview4 from '../../public/TypingTest_overview_4.png';
 import { Feature } from '../types/featureTypes';
 import { ProjectType } from '../types/types';
 
@@ -64,10 +64,10 @@ export const cvLink =
   'https://drive.google.com/file/d/15h6cf67pk6qUQw2lC5Kcsu1PFJiNJKU9/view?usp=sharing';
 
 export const typingTestOverviewScreenshots = [
-  typingTestOverview1,
-  typingTestOverview3,
-  typingTestOverview4,
-  typingTestOverview2,
+  '/TypingTest_overview_1.png',
+  '/TypingTest_overview_3.png',
+  '/TypingTest_overview_4.png',
+  '/TypingTest_overview_2.png',
 ];
 export const descriptionTypingTestProject =
   'This project is an educational typing application inspired by MonkeyType. It helps users improve their typing speed and accuracy in an interactive, multi-language environment, while tracking key performance metrics like Words Per Minute (WPM), time, accuracy, and a breakdown of correct and incorrect characters.';
@@ -106,9 +106,9 @@ export const keyFeaturesTypingTest: Feature[] = [
   },
 ];
 export const starWarsScreenshots = [
-  StarWarsOverview1,
-  StarWarsOverview2,
-  StarWarsOverview3,
+  '/StarWars_overview_1.png',
+  '/StarWars_overview_2.png',
+  '/StarWars_overview_3.png',
 ];
 export const descriptionStarWarsProject =
   "This Star Wars Database lets users explore a hero list with infinite scroll, automatically loading more heroes as they browse. Each hero's detailed connections to movies and starships are displayed through an interactive graph, offering an intuitive and engaging user experience. The project is designed for smooth performance and reliability, ensuring a dynamic and efficient interface for users.";
@@ -166,10 +166,10 @@ export const keyFeaturesChatAppProject: Feature[] = [
 ];
 
 export const chatAppScreenshots = [
-  MobileChatOverview1,
-  MobileChatOverview2,
-  MobileChatOverview3,
-  MobileChatOverview4,
+  '/Chat_App_overview_1.png',
+  '/Chat_App_overview_2.png',
+  '/Chat_App_overview_3.png',
+  '/Chat_App_overview_4.png',
 ];
 
 export const starWarsProject: ProjectType = {

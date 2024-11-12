@@ -1,7 +1,7 @@
 import Image from 'next/image';
 
-import githubIcon from '../assets/githubIcon.svg';
-import linkedInIcon from '../assets/linkedInIcon.svg';
+import githubIcon from '../../public/githubIcon.svg';
+import linkedInIcon from '../../public/linkedInIcon.svg';
 import { gitHubLink, linkedInLink } from '../helpers/constants';
 
 export const Footer = () => {

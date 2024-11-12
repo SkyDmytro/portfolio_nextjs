@@ -1,4 +1,6 @@
-import download from '../assets/download-2-24.png';
+'use client';
+
+import download from '../../public/download-2-24.png';
 import { cvLink, linkedInLink } from '../helpers/constants';
 import { CvButton } from './CVButton';
 import { TitleSkillsPage } from './TitleSkillsPageComponent';

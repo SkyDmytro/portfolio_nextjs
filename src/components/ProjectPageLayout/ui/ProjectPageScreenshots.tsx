@@ -16,6 +16,8 @@ export const ProjectPageScreenshots = ({
           return (
             <Image
               src={screen}
+              width={1000}
+              height={300}
               alt="project image"
               key={idx}
               className="rounded-lg ring ring-lightBlue ring-offset-1 max-h-[700px] w-auto"

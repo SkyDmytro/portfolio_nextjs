@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import { ReactNode } from 'react';
 
-import redirect from '../assets/icons8-share-24.png';
+import redirect from '../../public/icons8-share-24.png';
 import '../styles/buttonAnimation.css';
 import { TechStack } from './TechStack';
 
