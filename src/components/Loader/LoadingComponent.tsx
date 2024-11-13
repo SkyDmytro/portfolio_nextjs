@@ -1,7 +1,9 @@
 export const LoadingComponent = () => {
   return (
-    <div className="w-screen h-screen flex justify-center items-center bg-darkBlue">
-      <h1 className="text-3xl font-bold text-white">Loading....</h1>
+    <div className="min-h-screen flex bg-darkBlue justify-center items-center">
+      <div className="flex items-center justify-center h-full">
+        <div className="animate-spin rounded-full h-20 w-20 border-b-4 border-lightBlue"></div>
+      </div>
     </div>
   );
 };
