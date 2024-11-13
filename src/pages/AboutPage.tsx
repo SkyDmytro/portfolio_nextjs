@@ -5,7 +5,7 @@ import { PageTitle } from '../components/ProjectsPageComponent/ui/PageTitle';
 const AboutPage = () => {
   return (
     <section id="about" className="bg-blue min-h-screen ">
-      <div className="container py-10 ">
+      <div className="container py-14 ">
         <PageTitle
           title="About me"
           subtitle="Here you will find more information about me, what I do, and my current skills mostly in terms of programming and technology"

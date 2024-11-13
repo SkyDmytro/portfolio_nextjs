@@ -17,7 +17,7 @@ import {
 const ProjectsPage = () => {
   return (
     <section id="projects" className="bg-darkBlue ">
-      <div className="container flex flex-col gap-24 pt-10 pb-10">
+      <div className="container flex flex-col gap-24 pt-14 pb-10">
         <PageTitle
           title="Projects"
           subtitle="Here you will find some of the personal and clients projects that I created with each project containing its own case study"
