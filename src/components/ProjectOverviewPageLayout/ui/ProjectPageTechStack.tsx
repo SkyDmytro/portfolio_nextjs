@@ -1,4 +1,4 @@
-import { TechStack } from '../../TechStack';
+import { TechStack } from '../../ui/TechStack';
 
 export const ProjectPageTechStack = ({
   techStack,

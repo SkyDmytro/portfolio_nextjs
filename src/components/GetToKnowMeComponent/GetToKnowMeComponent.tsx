@@ -1,9 +1,9 @@
 'use client';
 
-import download from '../../public/download-2-24.png';
-import { cvLink, linkedInLink } from '../helpers/constants';
-import { CvButton } from './CVButton';
-import { TitleSkillsPage } from './TitleSkillsPageComponent';
+import download from '../../../public/download-2-24.png';
+import { cvLink, linkedInLink } from '../../helpers/constants';
+import { TitleSkillsPage } from '../ui/TitleSkillsPageComponent';
+import { CvButton } from './ui/CVButton';
 
 export const GetToKnowMeComponent = () => {
   const getCV = (e: React.MouseEvent<HTMLButtonElement>) => {

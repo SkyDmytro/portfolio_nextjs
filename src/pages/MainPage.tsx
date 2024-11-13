@@ -1,8 +1,8 @@
 import { ReactElement } from 'react';
 
-import { ScrollAnimationComponent } from '../components/ScrollAnimationComponent';
-import { SocialsMainPage } from '../components/SocialsMainPage';
-import { Title } from '../components/Title';
+import { Title } from '../components/MainPageTitle/Title';
+import { ScrollAnimationComponent } from '../components/ScrollAnimationComponent/ScrollAnimationComponent';
+import { SocialsMainPage } from '../components/SocialsMainPage/SocialsMainPage';
 
 const MainPage = (): ReactElement => {
   return (

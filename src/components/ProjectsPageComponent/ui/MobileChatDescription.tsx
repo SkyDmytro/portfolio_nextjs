@@ -1,4 +1,4 @@
-import { highlightText } from '../helpers/functions';
+import { highlightText } from '../../../helpers/functions';
 
 export const MobileChatDescription = () => {
   return (

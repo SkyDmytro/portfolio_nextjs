@@ -1,6 +1,6 @@
 import { Metadata } from 'next';
 
-import { ProjectPageLayout } from '../../../components/ProjectPageLayout/ProjectPageLayout';
+import { ProjectPageLayout } from '../../../components/ProjectOverviewPageLayout/ProjectPageLayout';
 import { starWarsProject } from '../../../helpers/constants';
 
 export const metadata: Metadata = {

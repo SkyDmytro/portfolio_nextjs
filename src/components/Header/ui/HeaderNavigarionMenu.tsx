@@ -1,7 +1,7 @@
 'use client';
 
-import useMediaQuery from '../hooks/useMediaQuery';
-import { BurgerMenu } from './BurgerMenu';
+import useMediaQuery from '../../../hooks/useMediaQuery';
+import { BurgerMenu } from '../../BurgerMenu/BurgerMenu';
 
 export const HeaderNavigarionMenu = () => {
   const isMobile = useMediaQuery(768);

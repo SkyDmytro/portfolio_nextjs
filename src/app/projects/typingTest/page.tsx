@@ -1,6 +1,6 @@
 import { Metadata } from 'next';
 
-import { ProjectPageLayout } from '../../../components/ProjectPageLayout/ProjectPageLayout';
+import { ProjectPageLayout } from '../../../components/ProjectOverviewPageLayout/ProjectPageLayout';
 import { TypingTestProject } from '../../../helpers/constants';
 
 // eslint-disable-next-line react-refresh/only-export-components
