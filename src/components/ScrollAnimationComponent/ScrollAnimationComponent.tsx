@@ -1,4 +1,4 @@
-import '../styles/ScrollAnimationComponent.style.css';
+import './styles/ScrollAnimationComponent.style.css';
 
 export const ScrollAnimationComponent = () => {
   return (

@@ -1,7 +1,7 @@
 import './App.css';
-import { Footer } from './components/Footer';
-import { Header } from './components/Header';
-import { ScrollButton } from './components/ScrollButton';
+import { Footer } from './components/Footer/Footer';
+import { Header } from './components/Header/Header';
+import { ScrollButton } from './components/ScrollButton/ScrollButton';
 import AboutPage from './pages/AboutPage';
 import ContactPage from './pages/ContactPage';
 import MainPage from './pages/MainPage';

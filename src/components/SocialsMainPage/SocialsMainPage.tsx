@@ -1,8 +1,8 @@
 import Image from 'next/image';
 
-import githubIcon from '../../public/githubIcon.svg';
-import linkedInIcon from '../../public/linkedInIcon.svg';
-import { gitHubLink, linkedInLink } from '../helpers/constants';
+import githubIcon from '../../../public/githubIcon.svg';
+import linkedInIcon from '../../../public/linkedInIcon.svg';
+import { gitHubLink, linkedInLink } from '../../helpers/constants';
 
 export const SocialsMainPage = () => {
   return (

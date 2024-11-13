@@ -1,6 +1,6 @@
-import { GetToKnowMeComponent } from '../components/GetToKnowMeComponent';
-import { MySkillsComponent } from '../components/MySkillsComponent';
-import { PageTitle } from '../components/PageTitle';
+import { GetToKnowMeComponent } from '../components/GetToKnowMeComponent/GetToKnowMeComponent';
+import { MySkillsComponent } from '../components/MySkillsComponent/MySkillsComponent';
+import { PageTitle } from '../components/ProjectsPageComponent/ui/PageTitle';
 
 const AboutPage = () => {
   return (

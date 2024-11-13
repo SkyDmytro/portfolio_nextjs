@@ -2,9 +2,9 @@ import { FormEventHandler } from 'react';
 import { Control, Controller, DeepPartial } from 'react-hook-form';
 
 import { ContactFormValues } from '../../../types/formTypes';
-import { CustomButton } from '../../CustomButton';
-import CustomInput from '../../CustomInput';
-import { FormMessageTextArea } from '../../FormMessageTextArea';
+import { FormMessageTextArea } from './FormMessageTextArea';
+import { CustomInput } from '../../ui';
+import { CustomButton } from '../../ui';
 import { ErrorForm } from './ErrorForm';
 import { LoadingForm } from './LoadingForm';
 import { SuccessForm } from './SuccessForm';

@@ -4,7 +4,7 @@ interface CustomInputProps {
   labelText: string;
 }
 
-const CustomInput = ({
+export const CustomInput = ({
   labelText,
   ...props
 }: CustomInputProps): ReactElement => {
@@ -19,5 +19,3 @@ const CustomInput = ({
     </div>
   );
 };
-
-export default CustomInput;

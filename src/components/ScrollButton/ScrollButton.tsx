@@ -2,7 +2,7 @@
 
 import Image from 'next/image';
 
-import arrow from '../../public/up-arrow-button-svgrepo-com.svg';
+import arrow from '../../../public/up-arrow-button-svgrepo-com.svg';
 
 export const ScrollButton = () => {
   const handleScrollOnTop = () => {
