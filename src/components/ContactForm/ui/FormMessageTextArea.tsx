@@ -1,10 +1,5 @@
 import { ReactElement } from 'react';
 
-// interface FormMessageTextAreaProps {
-//   // onChange: React.ChangeEventHandler<HTMLTextAreaElement>;
-//   // value: string;
-// }
-
 export const FormMessageTextArea = ({
   // onChange,
   // value,

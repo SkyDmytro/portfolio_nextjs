@@ -1,12 +1,14 @@
 'use client';
 
+import { MouseEvent } from 'react';
+
 import download from '../../../public/download-2-24.png';
 import { cvLink, linkedInLink } from '../../helpers/constants';
 import { TitleSkillsPage } from '../ui/TitleSkillsPageComponent';
 import { CvButton } from './ui/CVButton';
 
 export const GetToKnowMeComponent = () => {
-  const getCV = (e: React.MouseEvent<HTMLButtonElement>) => {
+  const getCV = (e: MouseEvent<HTMLButtonElement>) => {
     e.preventDefault();
     window.location.href = cvLink;
   };

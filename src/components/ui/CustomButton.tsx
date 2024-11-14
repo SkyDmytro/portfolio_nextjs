@@ -5,8 +5,8 @@ import { ButtonHTMLAttributes, MouseEventHandler, ReactElement } from 'react';
  * @param {CustomButtonProps} props - The properties for the button.
  * @param {string} props.type - The type of the button (defaults to 'button').
  * @param {string} props.text - The text to be displayed on the button.
- * @param {React.MouseEventHandler<HTMLButtonElement>} props.onClick - The function to be called when the button is clicked.
- * @returns {React.ReactElement} A button element with the specified properties.
+ * @param {MouseEventHandler<HTMLButtonElement>} props.onClick - The function to be called when the button is clicked.
+ * @returns {ReactElement} A button element with the specified properties.
  */
 export interface CustomButtonProps
   extends ButtonHTMLAttributes<HTMLButtonElement> {

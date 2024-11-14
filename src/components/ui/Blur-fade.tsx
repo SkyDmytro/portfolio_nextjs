@@ -7,12 +7,12 @@ import {
   motion,
   useInView,
 } from 'framer-motion';
-import { useRef } from 'react';
+import { ReactNode, useRef } from 'react';
 
 type MarginType = UseInViewOptions['margin'];
 
 interface BlurFadeProps {
-  children: React.ReactNode;
+  children: ReactNode;
   className?: string;
   variant?: {
     hidden: { y: number };
