@@ -3,7 +3,7 @@ import { PageTitle } from '../components/ProjectsPageComponent/ui/PageTitle';
 
 const ContactPage = () => {
   return (
-    <section id="contact" className="bg-blue pt-14">
+    <section id="contact" className="bg-black pt-14">
       <div className="container flex flex-col gap-24">
         <PageTitle
           title="contact"

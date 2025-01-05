@@ -6,7 +6,7 @@ import { gitHubLink, linkedInLink } from '../../helpers/constants';
 
 export const Footer = () => {
   return (
-    <footer className="w-full bg-darkBlue py-4">
+    <footer className="w-full bg-black py-4">
       <div className="container flex items-center justify-between font-bold">
         <a href="/" className="flex items-center gap-2">
           <span>Skydan Dmytro</span>

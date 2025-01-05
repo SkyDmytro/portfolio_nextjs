@@ -25,7 +25,7 @@ export const ProjectPageLayout = ({
     conclusion,
   },
 }: ProjectPageLayoutProps): ReactElement => (
-  <div className="min-h-screen bg-darkBlue text-white">
+  <div className="min-h-screen bg-black text-white">
     <ProjectPageHeader projectName={projectName} />
     <main className="container mx-auto px-4 py-8 text-lg">
       <ProjectPageProjectOverview

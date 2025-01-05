@@ -16,7 +16,7 @@ import {
 
 const ProjectsPage = () => {
   return (
-    <section id="projects" className="bg-darkBlue ">
+    <section id="projects" className="bg-black ">
       <div className="container flex flex-col gap-24 pt-14 pb-10">
         <PageTitle
           title="Projects"
