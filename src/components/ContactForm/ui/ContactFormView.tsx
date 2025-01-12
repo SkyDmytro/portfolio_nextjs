@@ -30,7 +30,7 @@ export const ContactFormView = ({
 }: ContactFormViewProps): JSX.Element => {
   return (
     <form
-      className="flex flex-col gap-6 bg-darkBlue px-10 py-8 mb-10 mx-auto sm:w-full md:w-2/3 lg:w-1/2 xl:w-1/3 h-[650px]"
+      className="flex flex-col gap-6 bg-black border-2 border-white rounded px-10 py-8 mb-10 mx-auto sm:w-full md:w-2/3 lg:w-1/2 xl:w-1/3 h-[650px]"
       onSubmit={handleSubmit}
     >
       {success && <SuccessForm />}

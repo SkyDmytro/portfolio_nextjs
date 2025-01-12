@@ -25,7 +25,7 @@ export default {
       primaryFont: 'white',
       secondaryFont: '#B8B8B8',
       gray: '#4A6D7C',
-      black: '#000000',
+      black: 'black',
     },
     container: {
       center: 'true',
