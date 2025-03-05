@@ -1,19 +1,5 @@
 // import mobileChat from "../assets/MobileChat.svg";
-import mobileChat from '../../public/Chat_Project_new.png';
-import starWars from '../../public/StarWarsProject_new.png';
-import typingTest from '../../public/Typing_testProject_new2.png';
-import { MobileChatDescription } from '../components/ProjectsPageComponent/ui/MobileChatDescription';
-import { PageTitle } from '../components/ProjectsPageComponent/ui/PageTitle';
-import { ProjectDescriptionLayout } from '../components/ProjectsPageComponent/ui/ProjectDescriptionLayout';
-import { ProjectImage } from '../components/ProjectsPageComponent/ui/ProjectImage';
-import { StarWarsDescription } from '../components/ProjectsPageComponent/ui/StarWarsDescription';
-import { TypingTestDescription } from '../components/ProjectsPageComponent/ui/TypingTestDescription';
 import { ProjectPageNew } from '../components/ProjectsPageNew/ProjectPageNew';
-import {
-  keyTechnologiesTypingTestProject,
-  mobilChatKeyTechnologies,
-  starWarstechnologies,
-} from '../helpers/constants';
 
 const ProjectsPage = () => {
   return (

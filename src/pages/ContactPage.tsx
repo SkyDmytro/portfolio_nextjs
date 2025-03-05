@@ -1,6 +1,4 @@
-import { ContactForm } from '../components/ContactForm/ContactForm';
 import { ContactPageNew } from '../components/ContactPageNew/ContactPageNew';
-import { PageTitle } from '../components/ProjectsPageComponent/ui/PageTitle';
 
 const ContactPage = () => {
   return (

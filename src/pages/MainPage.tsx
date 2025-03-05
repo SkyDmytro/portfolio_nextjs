@@ -1,11 +1,6 @@
 'use client';
 
-import { motion } from 'framer-motion';
-
-import CombinedBackground from '../components/AnimatedBg/AnimatedBackGround';
 import { HomePageNew } from '../components/HomePageNew/HomePageNew';
-import { Title } from '../components/MainPageTitle/Title';
-import { SocialsMainPage } from '../components/SocialsMainPage/SocialsMainPage';
 
 export default function Portfolio() {
   return (

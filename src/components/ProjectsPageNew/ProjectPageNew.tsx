@@ -1,8 +1,7 @@
-import { ExternalLink, Github, Linkedin } from 'lucide-react';
+import { ExternalLink } from 'lucide-react';
 import Image from 'next/image';
 import Link from 'next/link';
 
-import mobileChatImage from '../../../public/Chat_App_overview_1.png';
 import starWarsImage from '../../../public/StarWars_overview_1.png';
 import typingTestImage from '../../../public/TypingTest_overview_1.png';
 

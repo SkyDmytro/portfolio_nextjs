@@ -1,4 +1,4 @@
-import { Github, Linkedin, Mail, MapPin, Phone } from 'lucide-react';
+import { Github, Linkedin, Mail, MapPin } from 'lucide-react';
 import Link from 'next/link';
 
 import { gitHubLink, linkedInLink } from '../../helpers/constants';
