@@ -1,18 +1,10 @@
 'use client';
 
-import { MouseEvent } from 'react';
-
-import download from '../../../public/download-2-24.png';
 import { cvLink, linkedInLink } from '../../helpers/constants';
 import { TitleSkillsPage } from '../ui/TitleSkillsPageComponent';
-import { CvButton } from './ui/CVButton';
+import { CVLink } from './ui/CVLink';
 
 export const GetToKnowMeComponent = () => {
-  const getCV = (e: MouseEvent<HTMLButtonElement>) => {
-    e.preventDefault();
-    window.location.href = cvLink;
-  };
-
   return (
     <div className="sm:w-full lg:w-1/3 flex flex-col gap-8 justify-start p-4">
       <TitleSkillsPage text="Get to know me!" />
@@ -41,7 +33,7 @@ export const GetToKnowMeComponent = () => {
           I'm open to job opportunities where I can contribute, learn and grow.
         </p>
       </div>
-      <CvButton text="CV" icon={download} onClick={getCV} />
+      <CVLink href={cvLink} />
     </div>
   );
 };
