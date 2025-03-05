@@ -1,16 +1,18 @@
-import Image from 'next/image';
+import { Github, Linkedin } from 'lucide-react';
+import Link from 'next/link';
 
-import githubIcon from '../../../public/githubIcon.svg';
-import linkedInIcon from '../../../public/linkedInIcon.svg';
 import { gitHubLink, linkedInLink } from '../../helpers/constants';
 
 export const Footer = () => {
   return (
     <footer className="w-full bg-black py-4">
       <div className="container flex items-center justify-between font-bold">
-        <a href="/" className="flex items-center gap-2">
-          <span>Skydan Dmytro</span>
-        </a>
+        <Link
+          href="/"
+          className="text-xl font-bold tracking-tight bg-gradient-to-r from-emerald-400 to-cyan-400 bg-clip-text text-transparent"
+        >
+          Skydan Dmytro
+        </Link>
         <div className="flex gap-6 justify-center align-center">
           <a
             href={gitHubLink}
@@ -18,7 +20,7 @@ export const Footer = () => {
             rel="noreferrer"
             className="flex items-center gap-2"
           >
-            <Image src={githubIcon} alt="GitHub icon" className="h-8 w-8" />
+            <Github size={24} />
           </a>
           <a
             href={linkedInLink}
@@ -26,7 +28,7 @@ export const Footer = () => {
             rel="noreferrer"
             className="flex items-center gap-2"
           >
-            <Image src={linkedInIcon} alt="LinkedIn icon" className="h-8 w-8" />
+            <Linkedin size={24} />
           </a>
         </div>
       </div>
