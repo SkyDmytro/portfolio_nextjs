@@ -8,6 +8,7 @@ import { ProjectDescriptionLayout } from '../components/ProjectsPageComponent/ui
 import { ProjectImage } from '../components/ProjectsPageComponent/ui/ProjectImage';
 import { StarWarsDescription } from '../components/ProjectsPageComponent/ui/StarWarsDescription';
 import { TypingTestDescription } from '../components/ProjectsPageComponent/ui/TypingTestDescription';
+import { ProjectPageNew } from '../components/ProjectsPageNew/ProjectPageNew';
 import {
   keyTechnologiesTypingTestProject,
   mobilChatKeyTechnologies,
@@ -17,7 +18,8 @@ import {
 const ProjectsPage = () => {
   return (
     <section id="projects" className="bg-black ">
-      <div className="container flex flex-col gap-24 pt-14 pb-10">
+      <ProjectPageNew />
+      {/* <div className="container flex flex-col gap-24 pt-14 pb-10">
         <PageTitle
           title="Projects"
           subtitle="Here you will find some of the personal and clients projects that I created with each project containing its own case study"
@@ -58,7 +60,7 @@ const ProjectsPage = () => {
             <MobileChatDescription />
           </ProjectDescriptionLayout>
         </div>
-      </div>
+      </div> */}
     </section>
   );
 };
