@@ -2,6 +2,7 @@ import { Github, Linkedin, Mail, MapPin } from 'lucide-react';
 import Link from 'next/link';
 
 import { gitHubLink, linkedInLink } from '../../helpers/constants';
+import { ContactForm } from '../ContactForm/ContactForm';
 
 export const ContactPageNew = () => {
   return (
@@ -81,63 +82,7 @@ export const ContactPageNew = () => {
             {/* Form */}
             <div className="relative">
               <div className="absolute -inset-1 bg-gradient-to-r from-emerald-600 to-cyan-600 rounded-lg blur opacity-25"></div>
-              <form className="relative bg-zinc-900 p-8 rounded-lg border border-zinc-800 space-y-6">
-                <div className="grid md:grid-cols-2 gap-6">
-                  <div className="space-y-2">
-                    <label htmlFor="name" className="text-sm text-zinc-400">
-                      Name
-                    </label>
-                    <input
-                      type="text"
-                      id="name"
-                      className="w-full px-4 py-3 bg-zinc-800 border border-zinc-700 rounded-lg focus:outline-none focus:border-emerald-500 text-white"
-                      placeholder="Your name"
-                    />
-                  </div>
-                  <div className="space-y-2">
-                    <label htmlFor="email" className="text-sm text-zinc-400">
-                      Email
-                    </label>
-                    <input
-                      type="email"
-                      id="email"
-                      className="w-full px-4 py-3 bg-zinc-800 border border-zinc-700 rounded-lg focus:outline-none focus:border-emerald-500 text-white"
-                      placeholder="Your email"
-                    />
-                  </div>
-                </div>
-
-                <div className="space-y-2">
-                  <label htmlFor="subject" className="text-sm text-zinc-400">
-                    Subject
-                  </label>
-                  <input
-                    type="text"
-                    id="subject"
-                    className="w-full px-4 py-3 bg-zinc-800 border border-zinc-700 rounded-lg focus:outline-none focus:border-emerald-500 text-white"
-                    placeholder="Subject"
-                  />
-                </div>
-
-                <div className="space-y-2">
-                  <label htmlFor="message" className="text-sm text-zinc-400">
-                    Message
-                  </label>
-                  <textarea
-                    id="message"
-                    rows={5}
-                    className="w-full px-4 py-3 bg-zinc-800 border border-zinc-700 rounded-lg focus:outline-none focus:border-emerald-500 text-white resize-none"
-                    placeholder="Your message"
-                  ></textarea>
-                </div>
-
-                <button
-                  type="submit"
-                  className="w-full py-3 bg-gradient-to-r from-emerald-600 to-cyan-600 rounded-lg text-white font-medium hover:from-emerald-500 hover:to-cyan-500 transition-colors"
-                >
-                  Send Message
-                </button>
-              </form>
+              <ContactForm />
             </div>
           </div>
         </div>

@@ -9,12 +9,15 @@ export const CustomInput = ({
   ...props
 }: CustomInputProps): ReactElement => {
   return (
-    <div className="flex flex-col gap-4">
-      <label className="font-bold">{labelText}</label>
+    <div className="space-y-2">
+      <label htmlFor="name" className="text-sm text-zinc-400">
+        {labelText}
+      </label>
       <input
         placeholder={`Type your ${labelText.toLowerCase()}`}
         type="text"
-        className="p-2 bg-blue rounded focus:outline-none focus:ring-2 focus:ring-lightBlue"
+        id="name"
+        className="w-full px-4 py-3 bg-zinc-800 border border-zinc-700 rounded-lg focus:outline-none focus:border-emerald-500 text-white"
         {...props}
       />
     </div>
