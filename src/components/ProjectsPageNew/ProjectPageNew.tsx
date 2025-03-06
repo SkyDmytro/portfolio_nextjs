@@ -2,13 +2,13 @@ import { ExternalLink } from 'lucide-react';
 import Image from 'next/image';
 import Link from 'next/link';
 
+import skyWishesImage from '../../../public/SkyWishesProject_1.png';
 import starWarsImage from '../../../public/StarWars_overview_1.png';
 import typingTestImage from '../../../public/TypingTest_overview_1.png';
 
 export const ProjectPageNew = () => {
   return (
     <div className="min-h-screen bg-black text-white font-sans">
-      {/* Hero Section */}
       <section className="pt-32 pb-16 relative">
         <div className="container mx-auto px-4">
           <div className="absolute top-20 left-1/2 -translate-x-1/2 w-96 h-96 bg-emerald-500/20 rounded-full blur-3xl opacity-20"></div>
@@ -24,10 +24,91 @@ export const ProjectPageNew = () => {
           </div>
         </div>
       </section>
-      {/* Projects */}
       <section className="py-16">
         <div className="container mx-auto px-4">
-          {/* Project 1 */}
+          <div className="grid md:grid-cols-2 gap-8 items-center mb-24">
+            <div className="order-1 md:order-2 relative group">
+              <div className="absolute -inset-0.5 bg-gradient-to-r from-cyan-600 to-blue-600 rounded-lg blur opacity-25 group-hover:opacity-100 transition duration-1000 group-hover:duration-200"></div>
+              <div className="relative bg-zinc-900 rounded-lg overflow-hidden">
+                <Image
+                  src={skyWishesImage}
+                  alt="Sky Wishes - Wish List Web Application"
+                  width={800}
+                  height={600}
+                  className=" h-auto"
+                />
+              </div>
+            </div>
+            <div className="order-2 md:order-1 space-y-6">
+              <h2 className="text-3xl font-bold">
+                Sky Wishes - Wish List Web Application
+              </h2>
+
+              <div className="flex flex-wrap gap-2">
+                {[
+                  'Nextjs',
+                  'React',
+                  'TypeScript',
+                  'Jest',
+                  'Tailwind CSS',
+                  'NextAuth.js',
+                  'Zod',
+                ].map(tech => (
+                  <span
+                    key={tech}
+                    className="px-3 py-1 bg-zinc-900 border border-zinc-800 rounded-full text-sm text-zinc-300"
+                  >
+                    {tech}
+                  </span>
+                ))}
+              </div>
+
+              <p className="text-zinc-400 leading-relaxed">
+                Sky Wishes is a wish list web application developed using{' '}
+                <span className="text-cyan-400">Next.js</span>,{' '}
+                <span className="text-cyan-400">React</span>, and{' '}
+                <span className="text-cyan-400">TypeScript</span>. The app
+                allows users to create and manage their wish lists, providing a
+                seamless and intuitive user experience.
+              </p>
+
+              <p className="text-zinc-400 leading-relaxed">
+                Users can manage their{' '}
+                <span className="text-cyan-400">wishlists</span> and{' '}
+                <span className="text-cyan-400">gifts</span>,{' '}
+                <span className="text-cyan-400">view friends lists</span>,{' '}
+                <span className="text-cyan-400">share their own</span>, and{' '}
+                <span className="text-cyan-400">add new friends</span> for easy
+                gift exchange and idea sharing. The app features secure user
+                authentication with{' '}
+                <span className="text-cyan-400">NextAuth.js</span>, ensuring
+                privacy and data protection.
+              </p>
+              <p className="text-zinc-400 leading-relaxed">
+                All data is efficiently stored using{' '}
+                <span className="text-cyan-400">MongoDB</span>, enabling
+                real-time updates. Additionally, the project incorporates{' '}
+                <span className="text-cyan-400">Jest</span> for testing core
+                components and logic, ensuring reliability as the app evolves.
+              </p>
+
+              <p className="text-zinc-400 leading-relaxed">
+                Overall, this project enhanced my skills in{' '}
+                <span className="text-cyan-400">React</span> development,{' '}
+                <span className="text-cyan-400">TypeScript</span>, and{' '}
+                <span className="text-cyan-400">Next.js</span>, improving my
+                ability to build scalable and maintainable applications.
+              </p>
+
+              <Link
+                href="/projects/skyWishes"
+                className="inline-flex items-center px-4 py-2 bg-gradient-to-r from-cyan-600 to-blue-600 rounded-lg text-white font-medium hover:from-cyan-500 hover:to-blue-500 transition-colors"
+              >
+                Project Showcase
+                <ExternalLink size={16} className="ml-2" />
+              </Link>
+            </div>
+          </div>
           <div className="grid md:grid-cols-2 gap-8 items-center mb-24">
             <div className="relative group">
               <div className="absolute -inset-0.5 bg-gradient-to-r from-emerald-600 to-cyan-600 rounded-lg blur opacity-25 group-hover:opacity-100 transition duration-1000 group-hover:duration-200"></div>
@@ -85,7 +166,6 @@ export const ProjectPageNew = () => {
             </div>
           </div>
 
-          {/* Project 2 */}
           <div className="grid md:grid-cols-2 gap-8 items-center mb-24">
             <div className="order-1 md:order-2 relative group">
               <div className="absolute -inset-0.5 bg-gradient-to-r from-cyan-600 to-blue-600 rounded-lg blur opacity-25 group-hover:opacity-100 transition duration-1000 group-hover:duration-200"></div>
