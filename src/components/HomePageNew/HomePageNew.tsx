@@ -46,7 +46,6 @@ export const HomePageNew = () => {
         </div>
       </section>
 
-      {/* Social Links */}
       <div className="fixed left-6 bottom-0 flex flex-col items-center space-y-6">
         <Link
           href={gitHubLink}

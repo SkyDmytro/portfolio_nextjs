@@ -16,7 +16,7 @@ export const BurgerMenu = () => {
   };
 
   return (
-    <div className="burger-menu">
+    <div className="burger-menu sm:block md:hidden">
       <div
         className={`burger-icon ${isOpen ? 'open' : ''}`}
         onClick={toggleMenu}
@@ -27,7 +27,7 @@ export const BurgerMenu = () => {
       </div>
 
       {isOpen && (
-        <div className="menu-overlay bg-darkBlue bg-opacity-90">
+        <div className="menu-overlay bg-black bg-opacity-80">
           <nav className="menu">
             <ul>
               <li>
@@ -41,8 +41,8 @@ export const BurgerMenu = () => {
                 </a>
               </li>
               <li>
-                <a href="#services" onClick={closeMenu}>
-                  Services
+                <a href="#projects" onClick={closeMenu}>
+                  Projects
                 </a>
               </li>
               <li>
