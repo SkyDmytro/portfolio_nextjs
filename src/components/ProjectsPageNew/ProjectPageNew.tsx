@@ -2,7 +2,7 @@ import { ExternalLink } from 'lucide-react';
 import Image from 'next/image';
 import Link from 'next/link';
 
-import skyWishesImage from '../../../public/SkyWishesProject_1.png';
+import skyWishesImage from '../../../public/Sky_Wishes_Project.png';
 import starWarsImage from '../../../public/StarWars_overview_1.png';
 import typingTestImage from '../../../public/TypingTest_overview_1.png';
 
@@ -35,7 +35,7 @@ export const ProjectPageNew = () => {
                   alt="Sky Wishes - Wish List Web Application"
                   width={800}
                   height={600}
-                  className=" h-auto"
+                  className="w-full h-auto"
                 />
               </div>
             </div>
