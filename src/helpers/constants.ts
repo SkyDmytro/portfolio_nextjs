@@ -203,3 +203,34 @@ export const TypingTestProject: ProjectType = {
   keyFeatures: keyFeaturesTypingTest,
   techStack: keyTechnologiesTypingTestProject,
 };
+
+const wishListFeatures: Feature[] = [
+  {
+    title: 'Users able to add wish lists',
+    details: [
+      'Users could manage their wish lists and share them',
+      'Users bla bla bla',
+    ],
+  },
+];
+
+const wishListTechStack = [
+  'Nextjs',
+  'React',
+  'TypeScript',
+  'Jest',
+  'Tailwind CSS',
+  'NextAuth.js',
+  'Zod',
+];
+
+export const WishListProject: ProjectType = {
+  url: 'https://skywishes.vercel.app/',
+  githubUrl: '',
+  description: 'Wish list .......',
+  keyFeatures: wishListFeatures,
+  name: 'SkyWishes - Wish list Web application',
+  screenshots: ['/Sky_Wishes_Project.png'],
+  techStack: wishListTechStack,
+  conclusion: 'I learned ...',
+};
