@@ -8,7 +8,7 @@ export const TechStack = ({ techs }: TechStackProps) => {
       {techs.map(tech => (
         <div
           key={tech}
-          className="bg-lightBlue bg-opacity-50 py-2 px-4 rounded-xl w-fit"
+          className="px-3 py-1 bg-zinc-900 border border-zinc-800 rounded-full text-md text-zinc-300"
         >
           <span className="opacity-100">{tech}</span>
         </div>
