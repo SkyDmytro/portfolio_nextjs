@@ -1,8 +1,8 @@
-import { ProjectPageLayout } from '../../../components/ProjectOverviewPageLayout/ProjectPageLayout';
+import ProjectDetailPage from '../../../components/ProjectOverviewPageLayout/ProjectPageLayoutNew';
 import { WishListProject } from '../../../helpers/constants';
 
 const page = () => {
-  return <ProjectPageLayout project={WishListProject} key="skyWishes" />;
+  return <ProjectDetailPage project={WishListProject} />;
 };
 
 export default page;
