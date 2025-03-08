@@ -1,6 +1,5 @@
 import { Metadata } from 'next';
 
-import { ProjectPageLayout } from '../../../components/ProjectOverviewPageLayout/ProjectPageLayout';
 import ProjectDetailPage from '../../../components/ProjectOverviewPageLayout/ProjectPageLayoutNew';
 import { TypingTestProject } from '../../../helpers/constants';
 
