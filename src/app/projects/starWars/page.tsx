@@ -1,6 +1,6 @@
 import { Metadata } from 'next';
 
-import { ProjectPageLayout } from '../../../components/ProjectOverviewPageLayout/ProjectPageLayout';
+import ProjectDetailPage from '../../../components/ProjectOverviewPageLayout/ProjectPageLayoutNew';
 import { starWarsProject } from '../../../helpers/constants';
 
 export const metadata: Metadata = {
@@ -41,7 +41,7 @@ export const metadata: Metadata = {
 };
 
 const page = () => {
-  return <ProjectPageLayout project={starWarsProject} />;
+  return <ProjectDetailPage project={starWarsProject} />;
 };
 
 export default page;

@@ -1,6 +1,6 @@
 import { Metadata } from 'next';
 
-import { ProjectPageLayout } from '../../../components/ProjectOverviewPageLayout/ProjectPageLayout';
+import ProjectDetailPage from '../../../components/ProjectOverviewPageLayout/ProjectPageLayoutNew';
 import { TypingTestProject } from '../../../helpers/constants';
 
 // eslint-disable-next-line react-refresh/only-export-components
@@ -42,11 +42,7 @@ export const metadata: Metadata = {
 };
 const TypingTestProjectPage = () => {
   const project = TypingTestProject;
-  return (
-    <>
-      <ProjectPageLayout project={project} />
-    </>
-  );
+  return <ProjectDetailPage project={project} />;
 };
 
 export default TypingTestProjectPage;

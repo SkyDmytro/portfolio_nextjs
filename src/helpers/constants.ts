@@ -203,3 +203,59 @@ export const TypingTestProject: ProjectType = {
   keyFeatures: keyFeaturesTypingTest,
   techStack: keyTechnologiesTypingTestProject,
 };
+
+const wishListFeatures: Feature[] = [
+  {
+    title: 'Wishlist Management',
+    details: [
+      'Create and customize personal wish lists with ease.',
+      'Add detailed gift information including price, priority, and links.',
+      'Edit and remove items as needed with real-time updates.',
+      'Mark items as reserved to avoid duplicate gifts.',
+    ],
+  },
+  {
+    title: 'Friend System',
+    details: [
+      'Search and add friends to your network using username.',
+      "View friends' wishlists to get gift ideas.",
+      'Share your wishlists with specific friends or groups.',
+      'Easily manage friend requests.',
+    ],
+  },
+  {
+    title: 'Secure Authentication',
+    details: [
+      'User authentication implemented with NextAuth.js.',
+      'Secure password handling and data encryption.',
+    ],
+  },
+];
+
+const wishListTechStack = [
+  'Nextjs',
+  'React',
+  'TypeScript',
+  'Jest',
+  'Tailwind CSS',
+  'NextAuth.js',
+  'Zod',
+];
+
+export const WishListProject: ProjectType = {
+  url: 'https://skywishes.vercel.app/',
+  githubUrl: '',
+  description:
+    'Sky Wishes is a wish list web application developed using Next.js, React, and TypeScript. The app allows users to create and manage their wish lists, providing a seamless and intuitive user experience. Users can manage their wishlists and gifts, view friends lists, share their own, and add new friends for easy gift exchange and idea sharing. The app features secure user authentication with NextAuth.js, ensuring privacy and data protection.',
+  keyFeatures: wishListFeatures,
+  name: 'SkyWishes - Wish list Web application',
+  screenshots: [
+    '/SkyWIshes_HomePage.png',
+    '/Sky_Wishes_Project.png',
+    '/SkyWishes_UserPage.png',
+    '/SkyWishes_SearchPage.png',
+  ],
+  techStack: wishListTechStack,
+  conclusion:
+    'Overall, this project enhanced my skills in React development, TypeScript, and Next.js, improving my ability to build scalable and maintainable applications.',
+};

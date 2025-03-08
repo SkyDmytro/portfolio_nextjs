@@ -1,11 +1,9 @@
-import { GetToKnowMeComponent } from '../components/GetToKnowMeComponent/GetToKnowMeComponent';
-import { MySkillsComponent } from '../components/MySkillsComponent/MySkillsComponent';
-import { PageTitle } from '../components/ProjectsPageComponent/ui/PageTitle';
+import Portfolio from '../components/AboutMePage/AboutMePageNew';
 
 const AboutPage = () => {
   return (
     <section id="about" className="bg-black min-h-screen ">
-      <div className="container py-14 ">
+      {/* <div className="container py-14 ">
         <PageTitle
           title="About me"
           subtitle="Here you will find more information about me, what I do, and my current skills mostly in terms of programming and technology"
@@ -15,6 +13,9 @@ const AboutPage = () => {
           <GetToKnowMeComponent />
           <MySkillsComponent />
         </div>
+      </div> */}
+      <div className="container">
+        <Portfolio />
       </div>
     </section>
   );

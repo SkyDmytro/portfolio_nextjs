@@ -1,21 +1,15 @@
 'use client';
 
-import { motion } from 'framer-motion';
-
-import CombinedBackground from '../components/AnimatedBg/AnimatedBackGround';
-import { Title } from '../components/MainPageTitle/Title';
-import { SocialsMainPage } from '../components/SocialsMainPage/SocialsMainPage';
+import { HomePageNew } from '../components/HomePageNew/HomePageNew';
 
 export default function Portfolio() {
   return (
     <section className="min-h-screen h-screen bg-black text-white relative overflow-hidden">
-      {/* Grid Background */}
-      <CombinedBackground />
+      {/* <CombinedBackground />
 
       <main className="relative z-10 min-h-full flex flex-col items-center justify-center text-center px-4">
         <Title />
 
-        {/* CTA Buttons */}
         <motion.div
           className="flex gap-4 mt-12"
           initial={{ opacity: 0, y: 20 }}
@@ -23,10 +17,7 @@ export default function Portfolio() {
           transition={{ duration: 0.7, delay: 0.4 }}
         ></motion.div>
 
-        {/* Social Links */}
-        <SocialsMainPage />
 
-        {/* Scroll Indicator */}
         <motion.div
           className="absolute bottom-8 left-1/2 -translate-x-1/2"
           initial={{ opacity: 0, y: 20 }}
@@ -41,7 +32,8 @@ export default function Portfolio() {
             <div className="w-1 h-2 bg-gray-500 rounded-full mt-2" />
           </div>
         </motion.div>
-      </main>
+      </main> */}
+      <HomePageNew />
     </section>
   );
 }
